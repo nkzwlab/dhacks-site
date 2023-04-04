@@ -1,10 +1,97 @@
-<script setup lang="ts">
+<script setup>
 // import TheWelcomez/ from '../components/TheWelcome.vue'
+
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  const canvas = document.getElementById('networkCanvas')
+  const ctx = canvas.getContext('2d')
+
+  canvas.width = window.innerWidth
+  canvas.height = window.innerWidth / 2.5
+
+  class Node {
+    constructor(x, y) {
+      this.x = x
+      this.y = y
+      this.radius = 2
+      this.vx = Math.random() * 2 - 1
+      this.vy = Math.random() * 2 - 1
+    }
+
+    draw() {
+      ctx.beginPath()
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
+      ctx.fillStyle = '#1caadd'
+      ctx.fill()
+    }
+
+    update() {
+      this.x += this.vx
+      this.y += this.vy
+
+      if (this.x < 0 || this.x > canvas.width) {
+        this.vx = -this.vx
+      }
+      if (this.y < 0 || this.y > canvas.height) {
+        this.vy = -this.vy
+      }
+
+      this.draw()
+    }
+  }
+
+  function distance(x1, y1, x2, y2) {
+    const xDist = x2 - x1
+    const yDist = y2 - y1
+
+    return Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2))
+  }
+
+  let nodes = []
+  const nodeCount = Math.ceil(canvas.width / 15)
+
+  for (let i = 0; i < nodeCount; i++) {
+    nodes.push(new Node(Math.random() * canvas.width, Math.random() * canvas.height))
+  }
+
+  function connectNodes() {
+    for (let i = 0; i < nodeCount; i++) {
+      for (let j = i + 1; j < nodeCount; j++) {
+        const dist = distance(nodes[i].x, nodes[i].y, nodes[j].x, nodes[j].y)
+
+        if (dist < 100) {
+          ctx.beginPath()
+          ctx.moveTo(nodes[i].x, nodes[i].y)
+          ctx.lineTo(nodes[j].x, nodes[j].y)
+          ctx.strokeStyle = `rgba(28, 170, 221, ${(100 - dist) / 100})`
+          ctx.lineWidth = 0.5
+          ctx.stroke()
+        }
+      }
+    }
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+    nodes.forEach((node) => {
+      node.update()
+    })
+
+    connectNodes()
+
+    requestAnimationFrame(animate)
+  }
+
+  animate()
+})
 </script>
 
 <template>
   <div class="home__wrapper">
     <div class="home__background">
+      <canvas id="networkCanvas"></canvas>
       <div class="home__background__text-container">
         <div class="home__background__kg-name">d-hacks</div>
         <div class="home__background__kg-description">Machine Learning</div>
@@ -32,18 +119,28 @@
   </div>
 </template>
 <style lang="scss">
+#networkCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  // height: 100%;
+  // aspect-ratio: 2.5 / 1;
+}
+
 .home {
   &__background {
-    background-image: url('@/assets/home-background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 2.47 / 1;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     font-family: 'Jura', sans-serif;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2.5 / 1;
 
     &__kg-name {
       font-size: 36px;
@@ -69,7 +166,7 @@
   &__about {
     width: 100%;
     max-width: 1170px;
-    padding: 56px 0;
+    padding: 56px 15px;
     margin-bottom: 0;
     min-height: 46px;
     margin: auto;
@@ -93,6 +190,10 @@
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 15px;
       padding-bottom: 56px;
+
+      @media screen and (max-width: 700px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
 }

@@ -1,8 +1,24 @@
 <template>
   <div class="header__wrapper">
-    <div class="header">
-      <img src="@/assets/d-hacks-logo.v4-2.png" alt="D-Hacks Logo" class="header__logo" />
-      <div class="header__items">
+    <div
+      class="header"
+      :class="{
+        header__normal: !(displaySizeUnder700 && showMenu)
+      }"
+    >
+      <img
+        src="@/assets/d-hacks-logo.v4-2.png"
+        alt="D-Hacks Logo"
+        class="header__logo"
+        v-if="!(displaySizeUnder700 && showMenu)"
+      />
+      <div
+        class="header__items"
+        v-if="!displaySizeUnder700 || showMenu"
+        :class="{
+          header__items__vertical: displaySizeUnder700
+        }"
+      >
         <div v-for="item in items" :key="item.path">
           <RouterLink
             :to="item.path"
@@ -12,18 +28,44 @@
           >
         </div>
       </div>
+      <div class="header__items" v-if="displaySizeUnder700 && !showMenu">
+        <!-- ハンバーガーメニューボタン -->
+        <div class="header__item" @click="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="header__items" v-else-if="displaySizeUnder700 && showMenu">
+        <!-- ハンバーガーメニューボタン -->
+        <div class="header__item" @click="toggleMenu()">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400&display=swap');
-
+// Font Awesome 5 Free
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
 // reset css
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+// fas fa-bars
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+.fa-bars {
+  font-size: 1.5rem;
+}
+// cross
+.fa-times {
+  font-size: 1.5rem;
 }
 
 .header {
@@ -38,7 +80,9 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  height: calc(60px + 20px + 18px);
+  &__normal {
+    height: calc(60px + 20px + 18px);
+  }
 
   &__wrapper {
     width: 100%;
@@ -55,6 +99,11 @@
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    &__vertical {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
   }
 
   &__item {
@@ -109,6 +158,7 @@
 } */
 </style>
 <script setup lang="ts">
+import { ref } from 'vue'
 // const items = ['Home', 'About', 'Contact']
 const items: {
   name: string
@@ -127,4 +177,16 @@ const items: {
     path: '/contact'
   }
 ]
+
+const displaySizeUnder700 = ref(window.innerWidth < 700)
+const showMenu = ref(false)
+
+// on display width change
+window.addEventListener('resize', () => {
+  displaySizeUnder700.value = window.innerWidth < 700
+})
+
+function toggleMenu() {
+  showMenu.value = !showMenu.value
+}
 </script>
