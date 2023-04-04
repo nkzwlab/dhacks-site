@@ -1,0 +1,28 @@
+<script setup lang="ts">
+// import { RouterLink, RouterView } from 'vue-router'
+// import HelloWorld from './components/HelloWorld.vue'
+import Header from '@/components/MainHeader.vue'
+import Footer from '@/components/MainFooter.vue'
+</script>
+
+<template>
+  <Header></Header>
+  <RouterView />
+  <Footer></Footer>
+  <!-- <header>
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+
+    <div class="wrapper">
+      <HelloWorld msg="You did it!" />
+
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+      </nav>
+    </div>
+  </header>
+
+  <RouterView /> -->
+</template>
+
+<style scoped></style>
