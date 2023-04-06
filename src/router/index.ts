@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/joinus',
       name: 'joinus',
       component: () => import('../views/JoinusView.vue')
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import('../views/ContactView.vue')
     }
   ]
 })

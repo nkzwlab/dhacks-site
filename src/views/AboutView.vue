@@ -114,12 +114,32 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
     display: flex;
     align-items: center;
+  }
+}
+
+#gallery{
+  display: flex;
+  flex-flow: column;
+}
+
+.gallery-item{
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.gallery-item-content{
+  & p {
+    margin: 0;
+  }
+
+  & img {
+    width: 100%;
   }
 }
 </style>
