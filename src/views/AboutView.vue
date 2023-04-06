@@ -80,14 +80,33 @@
 
       <div class="gallery-item">
         <div class="gallery-item-header">
-          <h3>プロジェクト名</h3>
+          <h3>bekku</h3>
         </div>
         <div class="gallery-item-content">
           <p>プロジェクトの概要</p>
-          <img src="" alt="">
+          <img src="@/assets/page_research_thumbnail/gao.png" alt="gallery-item-thumbnail">
         </div>
       </div>
 
+      <div class="gallery-item">
+        <div class="gallery-item-header">
+          <h3>akiho</h3>
+        </div>
+        <div class="gallery-item-content">
+          <p>プロジェクトの概要</p>
+          <img src="@/assets/page_research_thumbnail/gao.png" alt="gallery-item-thumbnail">
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-item-header">
+          <h3>hirono</h3>
+        </div>
+        <div class="gallery-item-content">
+          <p>プロジェクトの概要</p>
+          <img src="@/assets/page_research_thumbnail/gao.png" alt="gallery-item-thumbnail">
+        </div>
+      </div>
 
 
     </div>
