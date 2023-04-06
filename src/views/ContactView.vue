@@ -2,7 +2,7 @@
     <div>
   
       <h1>お問合せ</h1>
-      <p></p>
+      <p><a href="mailto:d-hacks@ht.sfc.keio.ac.jp">d-hacks@ht.sfc.keio.ac.jp</a></p>
   
      
   
