@@ -4,7 +4,7 @@
       <h1>履修希望の方へ</h1>
       <p>履修希望の方は、以下の内容を確認の上、履修希望のメールを<a href="mailto:d-hacks@ht.sfc.keio.ac.jp">d-hacks@ht.sfc.keio.ac.jp</a>まで送信してください。</p>
 
-      <h2>履修までの流れ</h2>
+      <h2>履修までの流れ </h2>
       <p>
         <ol>
           <li>『履修要件』・『時間割』を確認する</li>
