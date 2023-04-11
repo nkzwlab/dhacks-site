@@ -43,7 +43,7 @@
   
   </template>
   
-  <style lang="scss">
+  <style lang="scss" scoped>
   .about {
       min-height: 100vh;
       align-items: center;

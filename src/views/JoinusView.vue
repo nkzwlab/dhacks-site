@@ -47,7 +47,7 @@
 
   </template>
   
-  <style>
+  <style scoped>
 
 .joinus {
     min-height: 100vh;
