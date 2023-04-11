@@ -23,9 +23,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y wireguard
-          # CONFIG OF WIREGUARD IS STORED IN VPN_CONF AS BASE 64 ENCODED STRING
-          echo "${{ secrets.VPN_CONF }}" | base64 -d > /etc/wireguard/wg0.conf
-          sudo chmod 777 /etc/wireguard/wg0.conf
+          sudo echo "${{ secrets.VPN_CONF }}" | base64 -d > /etc/wireguard/wg0.conf
           sudo wg-quick up wg0
       - name: Deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
