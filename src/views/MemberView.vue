@@ -9,6 +9,43 @@
       <div class="galleries">
         <div id="Doctor">
             <h2>博士課程</h2>
+            <div class="gallery">  
+            <div class="gallery-item">
+                    <div class="profile-picture">
+                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                    </div>
+                    <div class="gallery-item-name">
+                        <h3>hirono</h3>
+                    </div>
+                    <div class="research">
+                        継続学習・俳句生成
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="profile-picture">
+                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                    </div>
+                    <div class="gallery-item-name">
+                        <h3>synth</h3>
+                    </div>
+                    <div class="research">
+                        音声合成・音声認識
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="profile-picture">
+                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                    </div>
+                    <div class="gallery-item-name">
+                        <h3>yuui</h3>
+                    </div>
+                    <div class="research">
+                        ヘルスケア
+                    </div>
+                </div>
+              </div>
         </div>
 
         <div id="Master">
@@ -28,13 +65,29 @@
                 </div>
 
             </div>
+        </div>
 
         <div id="Bachelor">
             <h2>学部生</h2>
+            <div class="gallery">  
+        
+        <div class="gallery-item">
+            <div class="profile-picture">
+                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+                <h3>gozu</h3>
+            </div>
+            <div class="research">
+                タブ譜推定
+            </div>
+        
+
+    </div>
         </div>
 
         
-      </div>
+        </div>
       </div>
       
   
@@ -51,7 +104,8 @@
         'ヒラギノ角ゴ Pro W3', sans-serif;
       padding-bottom: 3rem;
     }
-  
+
+
 .profile-picture{
     width: 100%;
     height: 100%;
@@ -92,20 +146,7 @@
     // flex: 1;
   }
   
-  .gallery-item-header{
-    margin-bottom: 1rem;
-  }
-  
-  .gallery-item-content{
-    & p {
-      margin-bottom: 1rem;
-    }
-  
-    & img {
-      width: 100%;
-    }
-  }
-  
+
   @media (max-width: 1024px) {
     #gallery{
       flex-direction: column;
