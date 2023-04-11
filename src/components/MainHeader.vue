@@ -173,6 +173,10 @@ const items: {
     path: '/about'
   },
   {
+    name: 'Members',
+    path: '/members'
+  },
+  {
     name: 'Joinus',
     path: '/joinus'
   },
