@@ -17,7 +17,7 @@
         
                 <div class="gallery-item">
                     <div class="profile-picture">
-                        <img src="@/assets/profile/hhiromasa.png" alt="profile-picture">
+                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
                         <h3>hhiromasa</h3>
@@ -52,6 +52,17 @@
       padding-bottom: 3rem;
     }
   
+.profile-picture{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    & img {
+      width: 100%;
+    }
+  }
+
   #top{
       & h1 {
         // font-size: 3rem;
@@ -74,7 +85,7 @@
   }
   
   .gallery-item{
-    width: 45%;
+    width: 20%;
     padding: 2rem;
     border-radius: 2rem;
     background-color: rgb(240, 246, 249);
