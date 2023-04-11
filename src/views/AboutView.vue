@@ -1,8 +1,11 @@
 <template>
   <div class="about">
 
-    <h1>Research</h1>
-    <p>d-hacksでは人工知能に関する多様な個人研究のほか、地域自治体や民間企業との共同プロジェクトにも多数取り組んでいます。</p>
+    <div id="top">
+      <h1>Research</h1>
+      <p>d-hacksでは人工知能に関する多様な個人研究のほか、地域自治体や民間企業との共同プロジェクトにも多数取り組んでいます。</p>
+    </div>
+    
 
     <div id="gallery">
 
@@ -108,38 +111,85 @@
         </div>
       </div>
 
+      <div class="gallery-item">
+        <div class="gallery-item-header">
+          <h3>synth</h3>
+        </div>
+        <div class="gallery-item-content">
+          <p>プロジェクトの概要</p>
+          <img src="@/assets/page_research_thumbnail/gao.png" alt="gallery-item-thumbnail">
+        </div>
+      </div>
+
 
     </div>
 
   </div>
+
+
 </template>
 
 <style lang="scss">
-@media (min-width: 1024px) {
-  .about {
+.about {
     min-height: 100vh;
-    display: flex;
     align-items: center;
+    font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Hiragino Kaku Gothic Pro',
+      'ヒラギノ角ゴ Pro W3', sans-serif;
+    padding-bottom: 3rem;
   }
-}
+
+#top{
+    & h1 {
+      // font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      padding: 1rem
+    }
+  }
+    
 
 #gallery{
   display: flex;
-  flex-flow: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  // set everything to center
+  justify-content: center;
+  // flex-direction: row;
 }
 
 .gallery-item{
-  width: 100%;
-  padding: 0 1rem;
+  width: 45%;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: rgb(240, 246, 249);
+  // flex: 1;
+}
+
+.gallery-item-header{
+  margin-bottom: 1rem;
 }
 
 .gallery-item-content{
   & p {
-    margin: 0;
+    margin-bottom: 1rem;
   }
 
   & img {
     width: 100%;
   }
 }
+
+@media (max-width: 1024px) {
+  #gallery{
+    flex-direction: column;
+  }
+
+  .gallery-item{
+    justify-content: center;
+    width: 80%;
+  }
+}
+
 </style>
