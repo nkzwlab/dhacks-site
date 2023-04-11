@@ -141,7 +141,7 @@
 #top{
     & h1 {
       // font-size: 3rem;
-      margin-bottom: 1rem;
+      padding: 1rem;
     }
 
     & p {
@@ -184,11 +184,14 @@
 @media (max-width: 1024px) {
   #gallery{
     flex-direction: column;
+    justify-content: center;
   }
 
   .gallery-item{
     justify-content: center;
     width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
