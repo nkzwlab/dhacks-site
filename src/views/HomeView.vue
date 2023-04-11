@@ -10,6 +10,8 @@ onMounted(() => {
   canvas.width = window.innerWidth
   canvas.height = window.innerWidth / 2.5
 
+  let reverse = false
+
   class Node {
     constructor(x, y) {
       this.x = x
@@ -19,16 +21,41 @@ onMounted(() => {
       this.vy = Math.random() * 2 - 1
     }
 
-    draw() {
+    draw(mouse) {
       ctx.beginPath()
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
       ctx.fillStyle = '#1caadd'
       ctx.fill()
+      // draw very big red circle to mouse position
+
+      ctx.beginPath()
+      ctx.arc(mouse.x, mouse.y, 100, 0, Math.PI * 2)
+      ctx.strokeStyle = 'rgba(255, 0, 0, 0.1)'
+      ctx.stroke()
+
+      // console.log(mouse.x, mouse.y)
     }
 
-    update() {
-      this.x += this.vx
-      this.y += this.vy
+    update(mouse) {
+      const dist = distance(this.x, this.y, mouse.x, mouse.y)
+
+      if (dist < 100) {
+        const dx = this.x - mouse.x
+        const dy = this.y - mouse.y
+        const angle = Math.atan2(dy, dx)
+        const speed = 2
+
+        this.vx += Math.cos(angle) * speed
+        this.vy += Math.sin(angle) * speed
+      }
+
+      if (reverse) {
+        this.x -= this.vx
+        this.y -= this.vy
+      } else {
+        this.x += this.vx
+        this.y += this.vy
+      }
 
       if (this.x < 0 || this.x > canvas.width) {
         this.vx = -this.vx
@@ -37,7 +64,7 @@ onMounted(() => {
         this.vy = -this.vy
       }
 
-      this.draw()
+      this.draw(mouse)
     }
   }
 
@@ -72,11 +99,35 @@ onMounted(() => {
     }
   }
 
+  const mouse = {
+    x: undefined,
+    y: undefined
+  }
+
+  console.log(canvas)
+  canvas.addEventListener('mousemove', (event) => {
+    console.log('event.offsetX')
+    console.log(event)
+    mouse.x = event.offsetX
+    mouse.y = event.offsetY
+  })
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'r' || event.key === 'R') {
+      reverse = true
+    }
+  })
+  document.addEventListener('keyup', (event) => {
+    if (event.key === 'r' || event.key === 'R') {
+      reverse = false
+    }
+  })
+
   function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 
     nodes.forEach((node) => {
-      node.update()
+      node.update(mouse)
     })
 
     connectNodes()
