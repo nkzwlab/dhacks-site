@@ -32,6 +32,9 @@ jobs:
           username: jnroot
           server: ${{ secrets.FTP_SERVER }}
           local_path: './dist/*'
-          remote_path: '/var/www/html/'
+          remote_path: '/var/www/html'
           sftp_only: true
           password: ${{ secrets.FTP_PASSWORD }}
+          ssh_private_key: ''
+      - name: Disconnect WireGuard
+        run: sudo wg-quick down wg0
