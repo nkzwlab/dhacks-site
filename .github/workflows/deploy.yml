@@ -1,0 +1,37 @@
+# DEPLOY TO PRODUCTION github action
+
+name: Deploy to production
+
+# on dispatch event from github UI
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Install WireGuard
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wireguard
+          # CONFIG OF WIREGUARD IS STORED IN VPN_CONF AS BASE 64 ENCODED STRING
+          echo "${{ secrets.VPN_CONF }}" | base64 -d > /etc/wireguard/wg0.conf
+          sudo wg-quick up wg0
+      - name: Deploy file
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: jnroot
+          server: ${{ secrets.FTP_SERVER }}
+          local_path: './dist/*'
+          remote_path: '/var/www/html/'
+          sftp_only: true
+          password: ${{ secrets.FTP_PASSWORD }}
