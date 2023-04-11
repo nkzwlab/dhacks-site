@@ -23,7 +23,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y wireguard
-          sudo echo "${{ secrets.VPN_CONF }}" | base64 -d > /etc/wireguard/wg0.conf
+          echo "${{ secrets.VPN_CONF }}" | base64 -d > /tmp/wg0.conf
+          sudo mv /tmp/wg0.conf /etc/wireguard/wg0.conf
           sudo wg-quick up wg0
       - name: Deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
