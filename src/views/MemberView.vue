@@ -108,12 +108,12 @@
 
 .profile-picture{
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
     & img {
       width: 100%;
+      border-radius: 50%;
+      // height:100%;
     }
   }
 
@@ -121,15 +121,25 @@
       & h1 {
         // font-size: 3rem;
         padding: 1rem;
+        text-align: center;
       }
   
       & p {
-        padding: 1rem
+        padding: 1rem;
+        text-align: center;
       }
     }
       
+  .galleries{
+    justify-content: center;
+    text-align: center;
+
+    & h2 {
+      padding: 3rem 1rem 1rem 1rem;
+    }
+  }
   
-  #gallery{
+  .gallery{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
