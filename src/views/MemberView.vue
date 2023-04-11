@@ -2,8 +2,8 @@
     <div class="about">
   
       <div id="top">
-        <h1>Research</h1>
-        <p>d-hacksでは人工知能に関する多様な個人研究のほか、地域自治体や民間企業との共同プロジェクトにも多数取り組んでいます。</p>
+        <h1>Members</h1>
+        <p></p>
       </div>
       
       <div class="galleries">
@@ -15,7 +15,7 @@
                         <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
-                        <h3>hirono</h3>
+                        <h3>D2 hirono</h3>
                     </div>
                     <div class="research">
                         継続学習・俳句生成
@@ -27,7 +27,7 @@
                         <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
-                        <h3>synth</h3>
+                        <h3>D2 synth</h3>
                     </div>
                     <div class="research">
                         音声合成・音声認識
@@ -39,7 +39,7 @@
                         <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
-                        <h3>yuui</h3>
+                        <h3>D2 yuui</h3>
                     </div>
                     <div class="research">
                         ヘルスケア
@@ -57,7 +57,43 @@
                         <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
-                        <h3>hhiromasa</h3>
+                        <h3>M2 akiho</h3>
+                    </div>
+                    <div class="research">
+                        フィギュアスケート・姿勢推定
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="profile-picture">
+                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                    </div>
+                    <div class="gallery-item-name">
+                        <h3>M2 bekku</h3>
+                    </div>
+                    <div class="research">
+                        モデル選択
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="profile-picture">
+                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                    </div>
+                    <div class="gallery-item-name">
+                        <h3>M2 hamachu</h3>
+                    </div>
+                    <div class="research">
+                        感情推定
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="profile-picture">
+                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                    </div>
+                    <div class="gallery-item-name">
+                        <h3>M1 hhiromasa</h3>
                     </div>
                     <div class="research">
                         KGL・知識蒸留・フェイク画像生成
@@ -71,19 +107,81 @@
             <h2>学部生</h2>
             <div class="gallery">  
         
-        <div class="gallery-item">
+          <div class="gallery-item">
             <div class="profile-picture">
                 <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
-                <h3>gozu</h3>
+                <h3>B4 gozu</h3>
             </div>
             <div class="research">
                 タブ譜推定
             </div>
-        
+          </div>
+            
+          <div class="gallery-item">
+            <div class="profile-picture">
+                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+                <h3>B4 naoyashi</h3>
+            </div>
+            <div class="research">
+                医療データ解析
+            </div>
+          </div>
 
-    </div>
+          <div class="gallery-item">
+            <div class="profile-picture">
+                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+                <h3>B4 tam</h3>
+            </div>
+            <div class="research">
+                強化学習を用いた推薦システム
+            </div>
+          </div>
+
+          <div class="gallery-item">            
+            <div class="profile-picture">
+                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+                <h3>B4 suzuto</h3>
+            </div>
+            <div class="research">
+                自然言語処理を用いた教育システム
+            </div>
+          </div>
+
+          <div class="gallery-item">            
+            <div class="profile-picture">
+                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+                <h3>B3 hiyon</h3>
+            </div>
+            <div class="research">
+                知識融合・他クラス分類
+            </div>
+          </div>
+
+          <div class="gallery-item">            
+            <div class="profile-picture">
+                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+                <h3>B3 brody</h3>
+            </div>
+            <div class="research">
+                手話翻訳
+            </div>
+          </div>
+
+
+
+ 
         </div>
 
         
