@@ -12,7 +12,7 @@
             <div class="gallery">  
             <div class="gallery-item">
                     <div class="profile-picture">
-                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                        <img src="@/assets/profile/hirono.png" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
                         <h3>D2 hirono</h3>
@@ -24,7 +24,7 @@
 
                 <div class="gallery-item">
                     <div class="profile-picture">
-                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                        <img src="@/assets/profile/synth.png" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
                         <h3>D2 synth</h3>
@@ -36,7 +36,7 @@
 
                 <div class="gallery-item">
                     <div class="profile-picture">
-                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                        <img src="@/assets/profile/yuui.png" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
                         <h3>D2 yuui</h3>
@@ -54,7 +54,7 @@
         
                 <div class="gallery-item">
                     <div class="profile-picture">
-                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                        <img src="@/assets/profile/akiho.png" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
                         <h3>M2 akiho</h3>
@@ -66,7 +66,7 @@
 
                 <div class="gallery-item">
                     <div class="profile-picture">
-                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                        <img src="@/assets/profile/bekku.png" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
                         <h3>M2 bekku</h3>
@@ -78,7 +78,7 @@
 
                 <div class="gallery-item">
                     <div class="profile-picture">
-                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                        <img src="@/assets/profile/hamachu.png" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
                         <h3>M2 hamachu</h3>
@@ -90,7 +90,7 @@
 
                 <div class="gallery-item">
                     <div class="profile-picture">
-                        <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                        <img src="@/assets/profile/hhiromasa.png" alt="profile-picture">
                     </div>
                     <div class="gallery-item-name">
                         <h3>M1 hhiromasa</h3>
@@ -109,7 +109,7 @@
         
           <div class="gallery-item">
             <div class="profile-picture">
-                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                <img src="@/assets/profile/gozu.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
                 <h3>B4 gozu</h3>
@@ -121,7 +121,7 @@
             
           <div class="gallery-item">
             <div class="profile-picture">
-                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                <img src="@/assets/profile/naoyashi.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
                 <h3>B4 naoyashi</h3>
@@ -133,7 +133,7 @@
 
           <div class="gallery-item">
             <div class="profile-picture">
-                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                <img src="@/assets/profile/tam.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
                 <h3>B4 tam</h3>
@@ -145,7 +145,7 @@
 
           <div class="gallery-item">            
             <div class="profile-picture">
-                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                <img src="@/assets/profile/suzuto.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
                 <h3>B4 suzuto</h3>
@@ -157,7 +157,7 @@
 
           <div class="gallery-item">            
             <div class="profile-picture">
-                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                <img src="@/assets/profile/hiyon.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
                 <h3>B3 hiyon</h3>
@@ -169,7 +169,7 @@
 
           <div class="gallery-item">            
             <div class="profile-picture">
-                <img src="@/assets/profile/hhiromasa.jpg" alt="profile-picture">
+                <img src="@/assets/profile/brody.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
                 <h3>B3 brody</h3>
@@ -205,7 +205,8 @@
 
 
 .profile-picture{
-    width: 100%;
+    
+    width: 50%;
     overflow: hidden;
     // margin-bottom: 1rem;
     & img {
@@ -230,9 +231,12 @@
       
   .galleries{
     justify-content: center;
-    text-align: center;
+    
+    align-items: center;
+    justify-content: center;
 
     & h2 {
+      text-align: center;
       padding: 3rem 1rem 1rem 1rem;
     }
   }
@@ -247,6 +251,10 @@
   }
   
   .gallery-item{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     width: 20%;
     padding: 2rem;
     border-radius: 2rem;
