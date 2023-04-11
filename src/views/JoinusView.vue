@@ -36,12 +36,12 @@
         </ul>
       </p>
 
-      <div class="faq">
+      <!-- <div class="faq">
       <h2>よくある質問</h2>
       </div>
       <ul>
         <li></li>
-      </ul>
+      </ul> -->
     </div>
 
 
