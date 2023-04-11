@@ -21,9 +21,8 @@ jobs:
         run: npm run build
       - name: Install WireGuard
         run: |
-          sudo apt-get update
-          sudo apt-get install -y wireguard
-          ln -s /usr/bin/resolvectl /usr/local/bin/resolvconf
+          sudo apt update
+          sudo apt install -y wireguard openresolv
           echo "${{ secrets.VPN_CONF }}" | base64 -d > /tmp/wg0.conf
           sudo mv /tmp/wg0.conf /etc/wireguard/wg0.conf
           sudo wg-quick up wg0
