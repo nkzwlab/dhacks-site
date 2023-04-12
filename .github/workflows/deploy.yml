@@ -30,6 +30,7 @@ jobs:
           sudo wg-quick up wg0
           curl https://www.google.com/
       - name: Deploy file
-        run: sshpass -p ${{ secrets.FTP_PASSWORD }} rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./dist/* jnroot@${{ secrets.FTP_SERVER }}:/var/www/html
+        run: |
+          echo "${{ secrets.FTP_PASSWORD }}" | sshpass -p "${{ secrets.FTP_PASSWORD }}" scp -o StrictHostKeyChecking=no -r ./dist root@${{ secrets.FTP_SERVER }}:/var/www/html
       - name: Disconnect WireGuard
         run: sudo wg-quick down wg0
