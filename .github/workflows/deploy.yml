@@ -30,14 +30,6 @@ jobs:
           sudo wg-quick up wg0
           curl https://www.google.com/
       - name: Deploy file
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          username: jnroot
-          server: ${{ secrets.FTP_SERVER }}
-          local_path: './dist/*'
-          remote_path: '/var/www/html'
-          sftp_only: true
-          password: ${{ secrets.FTP_PASSWORD }}
-          ssh_private_key: ''
+        run: sshpass -p ${{ secrets.FTP_PASSWORD }} rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./dist/* jnroot@${{ secrets.FTP_SERVER }}:/var/www/html
       - name: Disconnect WireGuard
         run: sudo wg-quick down wg0
