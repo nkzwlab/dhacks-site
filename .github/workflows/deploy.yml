@@ -27,6 +27,7 @@ jobs:
         run: |
           sudo mv /tmp/wg0.conf /etc/wireguard/wg0.conf
           sudo wg-quick up wg0
+          curl https://www.google.com/
       - name: Deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
