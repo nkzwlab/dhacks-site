@@ -28,7 +28,6 @@ jobs:
           echo "${{ secrets.VPN_CONF }}" | base64 -d > /tmp/wg0.conf
           sudo mv /tmp/wg0.conf /etc/wireguard/wg0.conf
           sudo wg-quick up wg0
-          curl https://www.google.com/
       - name: Deploy file
         run: |
           echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > /tmp/id_rsa
