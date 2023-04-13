@@ -31,6 +31,7 @@ jobs:
           curl https://www.google.com/
       - name: Deploy file
         run: |
-          sshpass -p ${{ secrets.FTP_PASSWORD }} scp -o StrictHostKeyChecking=no -r ./dist/* jnroot@${{ secrets.FTP_SERVER }}:/var/www/html
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > /tmp/id_rsa
+          scp -o StrictHostKeyChecking=no -r ./dist/* jnroot@${{ secrets.FTP_SERVER }}:/var/www/html -i /tmp/id_rsa
       - name: Disconnect WireGuard
         run: sudo wg-quick down wg0
