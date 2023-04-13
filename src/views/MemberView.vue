@@ -109,6 +109,21 @@
         
           <div class="gallery-item">
             <div class="profile-picture">
+                <img src="@/assets/profile/tsukky.png" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+                <h3>B4 tsukky</h3>
+            </div>
+            <div class="research">
+                ピアノ運指推定
+            </div>
+          </div>
+
+            <h2>学部生</h2>
+            <div class="gallery">  
+        
+          <div class="gallery-item">
+            <div class="profile-picture">
                 <img src="@/assets/profile/gozu.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
