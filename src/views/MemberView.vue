@@ -106,8 +106,8 @@
         <div id="Bachelor">
             <h2>学部生</h2>
             <div class="gallery">  
-        
-          <div class="gallery-item">
+
+                <div class="gallery-item">
             <div class="profile-picture">
                 <img src="@/assets/profile/tsukky.png" alt="profile-picture">
             </div>
@@ -118,10 +118,6 @@
                 ピアノ運指推定
             </div>
           </div>
-        </div>
-
-            <h2>学部生</h2>
-            <div class="gallery">  
         
           <div class="gallery-item">
             <div class="profile-picture">
