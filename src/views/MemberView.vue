@@ -118,6 +118,7 @@
                 ピアノ運指推定
             </div>
           </div>
+        </div>
 
             <h2>学部生</h2>
             <div class="gallery">  
