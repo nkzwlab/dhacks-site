@@ -148,7 +148,7 @@
                 <img src="@/assets/profile/tam.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
-                <h3>B4 tam</h3>
+                <h3>B3 tam</h3>
             </div>
             <div class="research">
                 強化学習を用いた推薦システム
