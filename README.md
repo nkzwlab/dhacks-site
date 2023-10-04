@@ -1,3 +1,20 @@
+# d-hacks ホームページ
+
+## 更新方法
+1. 本レポジトリをローカルに git clone する
+2. 必要な変更を加える
+3. 変更点をgit add + git commitし、最後にpushする
+4. github上で[Actions](https://github.com/nkzwlab/dhacks-site/actions)から「Deploy to Production」-> 「Run workflow」を選択する
+5. デプロイが終わるまで待つ。
+
+## 管理者
+※ 2023F時点
+- [tatsuru](https://github.com/s19514tt)
+- [hhiromasa](https://github.com/Hiromasa-H)
+
+
+---
+
 # .
 
 This template should help get you started developing with Vue 3 in Vite.
