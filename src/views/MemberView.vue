@@ -133,13 +133,13 @@
             
           <div class="gallery-item">
             <div class="profile-picture">
-                <img src="@/assets/profile/naoyashi.png" alt="profile-picture">
+                <img src="@/assets/profile/naoyashi2.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
                 <h3>B4 naoyashi</h3>
             </div>
             <div class="research">
-                医療データ解析
+                全ゲノム解析
             </div>
           </div>
 
