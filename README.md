@@ -11,11 +11,13 @@
 ※ 2023F時点
 - [tatsuru](https://github.com/s19514tt)
 - [hhiromasa](https://github.com/Hiromasa-H)
-
-
 ---
+※ 2024S時点
+- [gozu](https://github.com/KentarouGotou)
+- [hiyon](https://github.com/hiyon)
+- [tatsuru](https://github.com/s19514tt)
+- [hhiromasa](https://github.com/Hiromasa-H)
 
-# .
 
 This template should help get you started developing with Vue 3 in Vite.
 
