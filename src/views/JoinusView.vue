@@ -2,7 +2,7 @@
     <div class="joinus">
   
       <h1>履修希望の方へ</h1>
-      <p>履修希望の方は、以下の内容を確認の上、履修希望のメールを<a href="mailto:d-hacks-group@keio.jp">d-hacks-group@keio.jp</a>まで送信してください。</p>
+      <p>履修希望の方は、以下の内容を確認の上、RG初回・第2回授業に参加してd-hacksのミーティングに参加してください。</p>
 
       <h2>履修までの流れ </h2>
 
