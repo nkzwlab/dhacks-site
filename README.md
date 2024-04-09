@@ -8,13 +8,14 @@
 5. デプロイが終わるまで待つ。
 
 ## 管理者
-※ 2023F時点
+※ 2024S時点
+- [aokiti](https://github.com/sakusaku3939)
 - [tatsuru](https://github.com/s19514tt)
 - [hhiromasa](https://github.com/Hiromasa-H)
----
-※ 2024S時点
 - [gozu](https://github.com/KentarouGotou)
 - [hiyon](https://github.com/hiyon)
+---
+※ 2023F時点
 - [tatsuru](https://github.com/s19514tt)
 - [hhiromasa](https://github.com/Hiromasa-H)
 
