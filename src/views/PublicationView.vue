@@ -8,6 +8,7 @@
     <p>Yamada, Yusuke, et al. “C-SNE: Deep Cross-Modal Retrieval Based on Subjective Information Using Stochastic
       Neighbor Embedding.” Journal of Information Processing (IPSJ), vol. 64, Apr. 2023, pp. 246–55,
       https://doi.org/10.2197/ipsjjip.31.246.</p>
+    <p>Xi, Wang, et al. Lower Face Inpainting Aiming at Face Recognition under Occlusion. IEEE PerCom’22, 2022.</p>
     <p>川島寛乃, et al. “深層学習を用いた画像分類の継続学習におけるクラス難易度を考慮した容量制御.” 日本ソフトウェア科学会「コンピュータソフトウェア」,
       2022.</p>
     <p>Hamanaka, Satoki, et al. A Comparative Study of CIPN Symptom Estimation Methods Based on Machine Learning. 2021,
