@@ -14,9 +14,7 @@
     <p>Hamanaka, Satoki, et al. A Comparative Study of CIPN Symptom Estimation Methods Based on Machine Learning. 2021,
       p. 4.</p>
     <p>谷村朋樹, et al. “GANonymizer: 物体検出と敵対的生成を用いた映像匿名化手法.” 情報処理学会論文誌, vol. 60, no. 10,
-      2019, pp. 1829–44.
-      Okoshi, Tadashi, et al. “Real-World Large-Scale Study on Adaptive Notification Scheduling on Smartphones.”
-      Pervasive and Mobile Computing, vol. 50, Oct. 2018, pp. 1–24, https://doi.org/10.1016/J.PMCJ.2018.07.005.</p>
+      2019, pp. 1829–44.</p>
 
     <h1>国内会議</h1>
     <p>沙田佳穂, et al. “多クラス分類に向けた階層的分類モデル.” 研究報告ユビキタスコンピューティングシステム（UBI）, 2023, pp. 1–7.</p>
