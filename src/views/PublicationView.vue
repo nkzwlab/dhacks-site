@@ -52,21 +52,27 @@
   align-items: center;
   font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Hiragino Kaku Gothic Pro',
   'ヒラギノ角ゴ Pro W3', sans-serif;
-  padding: 0 3rem 3rem 3rem;
+  padding: 0 4rem 3rem;
 }
 
 h1 {
   margin-top: 3rem;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 p {
-  padding: 1rem;
+  padding: 1rem 0;
   line-break: anywhere;
 }
 
 a {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .publications {
+    padding: 0 2rem 3rem;
+  }
 }
 </style>
