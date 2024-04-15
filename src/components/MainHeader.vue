@@ -173,6 +173,10 @@ const items: {
     path: '/about'
   },
   {
+    name: 'Publications',
+    path: '/publications'
+  },
+  {
     name: 'Members',
     path: '/members'
   },
