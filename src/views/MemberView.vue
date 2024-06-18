@@ -235,9 +235,7 @@
 
 .galleries {
   justify-content: center;
-
   align-items: center;
-  justify-content: center;
 
   & h2 {
     text-align: center;
