@@ -10,7 +10,7 @@
       <div class="thumbnail">
         <img src="@/assets/page_research_thumbnail/hirono.png">
       </div>
-      <div class="content right">
+      <div class="content">
         <h1>CC-Replay: 深層学習を用いた画像分類の継続学習におけるクラス難易度を考慮した容量制御</h1>
         <ul class="author">
           <li class="pj">PJ-NTT</li>
@@ -25,6 +25,9 @@
     </div>
 
     <div class="card">
+      <div class="thumbnail">
+        <img src="@/assets/page_research_thumbnail/hhiromasa2.png">
+      </div>
       <div class="content">
         <h1>（動画生成の研究タイトル）</h1>
         <ul class="author">
@@ -36,16 +39,13 @@
           （動画生成の研究アブスト）
         </p>
       </div>
-      <div class="thumbnail right">
-        <img src="@/assets/page_research_thumbnail/hhiromasa2.png">
-      </div>
     </div>
 
     <div class="card">
       <div class="thumbnail">
         <img src="@/assets/page_research_thumbnail/gozu.png">
       </div>
-      <div class="content right">
+      <div class="content">
         <h1>エンド・ツー・エンドの自動ギタータブ譜転写のためのデータ表現とデータセットの提案</h1>
         <ul class="author">
         </ul>
@@ -57,6 +57,9 @@
     </div>
 
     <div class="card">
+      <div class="thumbnail">
+        <img src="@/assets/page_research_thumbnail/hiyon.png">
+      </div>
       <div class="content">
         <h1>多クラス分類に向けた階層的分類モデル</h1>
         <ul class="author">
@@ -70,16 +73,13 @@
           本研究では、複数のモデルを使用し、階層的にクラス分類を実現する新しい手法を提案する。
         </p>
       </div>
-      <div class="thumbnail right">
-        <img src="@/assets/page_research_thumbnail/hiyon.png">
-      </div>
     </div>
 
     <div class="card">
       <div class="thumbnail">
         <img src="@/assets/page_research_thumbnail/ojus.png">
       </div>
-      <div class="content right">
+      <div class="content">
         <h1>野良猫・飼い猫判別のための猫の顔分類技術の提案</h1>
         <ul class="author">
           <li class="international">ACM MobiSys Demo</li>
@@ -94,6 +94,9 @@
     </div>
 
     <div class="card">
+      <div class="thumbnail">
+        <img src="@/assets/page_research_thumbnail/neo.png">
+      </div>
       <div class="content">
         <h1>同時手番ゲームにおいて敵行動を予測し行動するエージェントの検証</h1>
         <ul class="author">
@@ -103,16 +106,13 @@
           同時手番ゲームにおいて、プレイヤーは相手の行動や情報を予測して行動することがある。これは、予測した行動に対して利得が高い行動をすることで、予測が当たった時に大きなアドバンテージを取れるためである。本研究では、敵の行動を考慮して行動する強化学習AIを開発し、Pokemon Showdownにおいて評価を行った。
         </p>
       </div>
-      <div class="thumbnail right">
-        <img src="@/assets/page_research_thumbnail/neo.png">
-      </div>
     </div>
 
     <div class="card">
       <div class="thumbnail">
         <img src="@/assets/page_research_thumbnail/ikechan.png">
       </div>
-      <div class="content right">
+      <div class="content">
         <h1>オーバートレーニング予防を目的とした筋負荷推定</h1>
         <ul class="author">
         </ul>
@@ -124,6 +124,9 @@
     </div>
 
     <div class="card">
+      <div class="thumbnail">
+        <img src="@/assets/page_research_thumbnail/zackey.png">
+      </div>
       <div class="content">
         <h1>弓道動画における結果予測とフォームフィックスツールの開発</h1>
         <ul class="author">
@@ -135,16 +138,13 @@
           的中結果予測システムは、LSTMやResNet50を用いて、時系列全体に注目した予測を目指す。フォームの改善方法の提案は、結果に対する各関節情報の寄与度を元に決定する。寄与度は、動画の各関節の座標の動きを別動画の同じ関節の座標に変化させた際の的中確率の変化を元に算出する。
         </p>
       </div>
-      <div class="thumbnail right">
-        <img src="@/assets/page_research_thumbnail/zackey.png">
-      </div>
     </div>
 
     <div class="card">
       <div class="thumbnail">
         <img src="@/assets/page_research_thumbnail/oda.png">
       </div>
-      <div class="content right">
+      <div class="content">
         <h1>3DLiDAR点群データを活用した物体認識システム</h1>
         <ul class="author">
         </ul>
@@ -157,6 +157,9 @@
     </div>
 
     <div class="card">
+      <div class="thumbnail">
+        <img src="@/assets/page_research_thumbnail/aokiti.png">
+      </div>
       <div class="content">
         <h1>一般物体検出とLSTMを用いた画像に基づく屋内位置推定</h1>
         <ul class="author">
@@ -168,9 +171,6 @@
           近年、GPSに依存しない画像ベースの自己位置推定において、深層学習ベースの様々な手法が数多く研究されている。しかし、従来の手法は物体単位での特徴が適切に考慮されておらず、同様の物体が多く写る室内環境には適していないという課題があった。
           そこで本手法では、一般物体検出のYOLOv8でクロップした検出物体に対し、CNNで特徴抽出を行い、さらにLSTMによって1つの特徴量に統合することで、複数個の物体特徴を考慮した位置推定を実現する。
         </p>
-      </div>
-      <div class="thumbnail right">
-        <img src="@/assets/page_research_thumbnail/aokiti.png">
       </div>
     </div>
   </div>
@@ -199,6 +199,11 @@
   display: flex;
   width: 90%;
   margin: 40px auto 96px;
+  gap: 56px;
+}
+
+.card:nth-child(odd) {
+  flex-direction: row-reverse;
 }
 
 .thumbnail {
@@ -210,10 +215,6 @@
     -moz-box-shadow: 10px 10px 60px 0 rgba(0, 0, 0, 0.4);
     box-shadow: 10px 10px 60px 0 rgba(0, 0, 0, 0.4);
   }
-}
-
-.right {
-  padding-left: 56px;
 }
 
 .content {
@@ -261,6 +262,12 @@ ul.author {
 
   .pj {
     background-color: #0097A7;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    flex-direction: column;
   }
 }
 </style>
