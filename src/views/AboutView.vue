@@ -103,7 +103,8 @@
         </ul>
         <div class="separator"></div>
         <p>
-          同時手番ゲームにおいて、プレイヤーは相手の行動や情報を予測して行動することがある。これは、予測した行動に対して利得が高い行動をすることで、予測が当たった時に大きなアドバンテージを取れるためである。本研究では、敵の行動を考慮して行動する強化学習AIを開発し、Pokemon Showdownにおいて評価を行った。
+          同時手番ゲームにおいて、プレイヤーは相手の行動や情報を予測して行動することがある。これは、予測した行動に対して利得が高い行動をすることで、予測が当たった時に大きなアドバンテージを取れるためである。本研究では、敵の行動を考慮して行動する強化学習AIを開発し、Pokemon
+          Showdownにおいて評価を行った。
         </p>
       </div>
     </div>
@@ -267,7 +268,26 @@ ul.author {
 
 @media screen and (max-width: 800px) {
   .card {
+    width: 80%;
     flex-direction: column;
+    margin: 16px auto 96px;
+    gap: 24px;
+  }
+
+  .card:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .thumbnail {
+    & img {
+      width: auto;
+      max-width: 100%;
+      max-height: 320px;
+    }
   }
 }
 </style>
