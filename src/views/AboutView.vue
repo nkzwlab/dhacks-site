@@ -187,12 +187,11 @@
 
 #top {
   & h1 {
-    // font-size: 3rem;
-    padding: 1rem;
+    padding: 3rem 4rem 0;
   }
 
   & p {
-    padding: 1rem
+    padding: 2rem 4rem;
   }
 }
 
