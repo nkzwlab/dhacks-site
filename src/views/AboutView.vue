@@ -14,7 +14,7 @@
         <h1>CC-Replay: 深層学習を用いた画像分類の継続学習におけるクラス難易度を考慮した容量制御</h1>
         <ul class="author">
           <li class="pj">PJ-NTT</li>
-          <li class="internal">学会誌「コンピュータソフトウェア」</li>
+          <li class="internal">学会誌「コンピュータソフトウェア」[D2]</li>
         </ul>
         <div class="separator"></div>
         <p>
@@ -32,8 +32,8 @@
         <h1>物体検出とセマンティックセグメンテーションによる車道上に限定した未知物体検出手法の提案</h1>
         <ul class="author">
           <li class="pj">PJ-Edogawa</li>
-          <li class="international">IEEE SMARTCOMP</li>
-          <li class="internal">IPSJ UBI</li>
+          <li class="international">IEEE SMARTCOMP [M2]</li>
+          <li class="internal">IPSJ UBI [B4]</li>
         </ul>
         <div class="separator"></div>
         <p>
@@ -49,8 +49,8 @@
       <div class="content">
         <h1>フィギュアスケートにおけるステップシークエンスの自動レベル判定</h1>
         <ul class="author">
-          <li class="internal">人工知能学会</li>
-          <li class="internal">IPSJ UBI</li>
+          <li class="internal">人工知能学会 [B4]</li>
+          <li class="internal">IPSJ UBI [B3]</li>
         </ul>
         <div class="separator"></div>
         <p>
@@ -67,7 +67,7 @@
         <h1>信号無視検知のための希少な現実生成</h1>
         <ul class="author">
           <li class="pj">PJ-Faked-City</li>
-          <li class="international">ACM MobiSys Poster</li>
+          <li class="international">ACM MobiSys Poster [M2]</li>
         </ul>
         <div class="separator"></div>
         <p>
@@ -83,8 +83,8 @@
       <div class="content">
         <h1>知識蒸留における教師モデル選別手法の提案</h1>
         <ul class="author">
-          <li class="international">A3 Foresight</li>
-          <li class="internal">人工知能学会</li>
+          <li class="international">A3 Foresight [M1]</li>
+          <li class="internal">人工知能学会 [B3]</li>
         </ul>
         <div class="separator"></div>
         <p>
@@ -131,8 +131,8 @@
         <h1>多クラス分類に向けた階層的分類モデル</h1>
         <ul class="author">
           <li class="pj">PJ-NTT</li>
-          <li class="international">ACM MobiSys Poster</li>
-          <li class="internal">IPSJ UBI</li>
+          <li class="international">ACM MobiSys Poster [B4]</li>
+          <li class="internal">IPSJ UBI [B3]</li>
         </ul>
         <div class="separator"></div>
         <p>
@@ -149,8 +149,8 @@
       <div class="content">
         <h1>野良猫・飼い猫判別のための猫の顔分類技術の提案</h1>
         <ul class="author">
-          <li class="international">ACM MobiSys Demo</li>
-          <li class="internal">IPSJ UBI</li>
+          <li class="international">ACM MobiSys Demo [B4]</li>
+          <li class="internal">IPSJ UBI [B3]</li>
         </ul>
         <div class="separator"></div>
         <p>
@@ -198,7 +198,7 @@
       <div class="content">
         <h1>弓道動画における結果予測とフォームフィックスツールの開発</h1>
         <ul class="author">
-          <li class="internal">IPSJ UBI</li>
+          <li class="internal">IPSJ UBI [B3]</li>
         </ul>
         <div class="separator"></div>
         <p>
@@ -231,8 +231,8 @@
       <div class="content">
         <h1>一般物体検出とLSTMを用いた画像に基づく屋内位置推定</h1>
         <ul class="author">
-          <li class="international">ACM MobiSys Demo</li>
-          <li class="internal">IPSJ UBI</li>
+          <li class="international">ACM MobiSys Demo [B2]</li>
+          <li class="internal">IPSJ UBI [B2]</li>
         </ul>
         <div class="separator"></div>
         <p>
