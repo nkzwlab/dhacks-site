@@ -29,14 +29,31 @@
         <img src="@/assets/page_research_thumbnail/hhiromasa2.png">
       </div>
       <div class="content">
-        <h1>（動画生成の研究タイトル）</h1>
+        <h1>信号無視検知のための希少な現実の生成</h1>
         <ul class="author">
           <li class="pj">PJ-Faked-City</li>
           <li class="international">ACM MobiSys Poster</li>
         </ul>
         <div class="separator"></div>
         <p>
-          （動画生成の研究アブスト）
+          大規模かつ多様なデータセットの準備は、強力な深層学習モデルの訓練に不可欠である。しかしながら、特定のデータが理論的には可能であるものの、実際に観察することが困難なケースも存在する（例：信号無視）。本研究では、物体検出モデルと画像生成モデルを組み合わせることで、フェイク動画を生成する手法の可能性を示す。具体的には、既存の動画を部分的に編集して、信号無視のドラレコ映像を人工的に作成することで、「希少な現実」を生成する。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail">
+        <img src="@/assets/page_research_thumbnail/hhiromasa.png">
+      </div>
+      <div class="content">
+        <h1>知識蒸留における教師モデル選別手法の提案</h1>
+        <ul class="author">
+          <li class="international">A3 Foresight</li>
+          <li class="internal">人工知能学会</li>
+        </ul>
+        <div class="separator"></div>
+        <p>
+          深層学習モデルのサイズを削減し、推論時間を高速化するために、知識蒸留と呼ばれる手法がある。この手法では、大きなモデルの出力をより軽量なモデルに模倣させることで、教師モデルの知識表現を生徒モデルに継承する。本研究では、複数の教師モデルの中から、生徒モデルに対して最適な教師モデルの組み合わせを選別しながら知識蒸留を行うフレームワークを提案している。検証実験により、提案手法によって訓練された生徒モデルの性能がランダムに組み合わせた生徒モデルを上回ることが示された。
         </p>
       </div>
     </div>
