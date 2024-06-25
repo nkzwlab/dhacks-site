@@ -26,10 +26,45 @@
 
     <div class="card">
       <div class="thumbnail">
+        <img src="../assets/page_research_thumbnail/bekku.png" alt="">
+      </div>
+      <div class="content">
+        <h1>物体検出とセマンティックセグメンテーションによる車道上に限定した未知物体検出手法の提案</h1>
+        <ul class="author">
+          <li class="pj">PJ-Edogawa</li>
+          <li class="international">IEEE SMARTCOMP</li>
+          <li class="internal">IPSJ UBI</li>
+        </ul>
+        <div class="separator"></div>
+        <p>
+          道路の老朽化により、穴あきなどの道路損傷が発生し、交通に影響を与える可能性がある。道路損傷の定期的な点検は、道路調査費用が高額なため困難である。東京都江戸川区において、既存の画像による道路損傷検知手法の実証実験を行った結果、実際の道路におけるポットホール検出では、影やマンホールの検出で誤検出が多発することが判明した。そこで本研究では、実証実験を通じて問題視されたポットホール検出における誤検出を低減する手法を提案する。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail">
+        <img src="@/assets/page_research_thumbnail/akiho.png" alt="">
+      </div>
+      <div class="content">
+        <h1>フィギュアスケートにおけるステップシークエンスの自動レベル判定</h1>
+        <ul class="author">
+          <li class="internal">人工知能学会</li>
+          <li class="internal">IPSJ UBI</li>
+        </ul>
+        <div class="separator"></div>
+        <p>
+          フィギュアスケートのステップシークエンスは12種類の詳細な動き（エレメント）を組み合わせて行う技で、レベル1からレベル4で判定される。公式試合では13人の審判が高速で連続して行われる技をリアルタイムに目視で確認し採点しているため、採点の公平性が問われている。本研究では、基本的技術が反映される重要な技でありながら、正確な採点が行われていない可能性があるステップシークエンスに焦点を当て、点数の算出につながるレベルを自動で判定する手法を提案する。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail">
         <img src="@/assets/page_research_thumbnail/hhiromasa2.png" alt="">
       </div>
       <div class="content">
-        <h1>信号無視検知のための希少な現実の生成</h1>
+        <h1>信号無視検知のための希少な現実生成</h1>
         <ul class="author">
           <li class="pj">PJ-Faked-City</li>
           <li class="international">ACM MobiSys Poster</li>
@@ -53,7 +88,22 @@
         </ul>
         <div class="separator"></div>
         <p>
-          深層学習モデルのサイズを削減し、推論時間を高速化するために、知識蒸留と呼ばれる手法がある。この手法では、大きなモデルの出力をより軽量なモデルに模倣させることで、教師モデルの知識表現を生徒モデルに継承する。本研究では、複数の教師モデルの中から、生徒モデルに対して最適な教師モデルの組み合わせを選別しながら知識蒸留を行うフレームワークを提案している。検証実験により、提案手法によって訓練された生徒モデルの性能がランダムに組み合わせた生徒モデルを上回ることが示された。
+          深層学習モデルのサイズを削減し、推論時間を高速化するために、知識蒸留と呼ばれる手法がある。この手法では、大きなモデルの出力をより軽量なモデルに模倣させることで、教師モデルの知識表現を生徒モデルに継承する。本研究では、複数の教師モデルの中から、生徒モデルに対して最適な教師モデルの組み合わせを選別しながら知識蒸留を行うフレームワークを提案する。実験により、提案手法によって訓練された生徒モデルの性能がランダムに組み合わせた生徒モデルを上回ることが示された。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail">
+        <img src="../assets/page_research_thumbnail/synth.png" alt="">
+      </div>
+      <div class="content">
+        <h1>FactorVAE-VC: 発話空間の分布に着目した多者間声質変換手法の提案</h1>
+        <ul class="author">
+        </ul>
+        <div class="separator"></div>
+        <p>
+          近年、深層学習による声質変換によって変換精度が向上し、付加情報を加えることで発話の一部のみを変換する研究が行われている。特に、変分オートエンコーダ（Variational AutoEncoder: VAE）のような、潜在空間の分布を用いて学習を行う手法を声質変換に適用する試みが盛んに行われている。 本研究では、データセットの分布をもつれなく適切に得る手法であるFactorVAEを声質変換に適用することで、発話の分布に基づいた多者間声質変換手法 FactorVAE-VC を提案する。
         </p>
       </div>
     </div>
