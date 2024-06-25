@@ -8,7 +8,7 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/hirono.png">
+        <img src="@/assets/page_research_thumbnail/hirono.png" alt="">
       </div>
       <div class="content">
         <h1>CC-Replay: 深層学習を用いた画像分類の継続学習におけるクラス難易度を考慮した容量制御</h1>
@@ -26,7 +26,7 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/hhiromasa2.png">
+        <img src="@/assets/page_research_thumbnail/hhiromasa2.png" alt="">
       </div>
       <div class="content">
         <h1>信号無視検知のための希少な現実の生成</h1>
@@ -43,7 +43,7 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/hhiromasa.png">
+        <img src="@/assets/page_research_thumbnail/hhiromasa.png" alt="">
       </div>
       <div class="content">
         <h1>知識蒸留における教師モデル選別手法の提案</h1>
@@ -60,7 +60,7 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/gozu.png">
+        <img src="@/assets/page_research_thumbnail/gozu.png" alt="">
       </div>
       <div class="content">
         <h1>エンド・ツー・エンドの自動ギタータブ譜転写のためのデータ表現とデータセットの提案</h1>
@@ -75,7 +75,7 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/hiyon.png">
+        <img src="@/assets/page_research_thumbnail/hiyon.png" alt="">
       </div>
       <div class="content">
         <h1>多クラス分類に向けた階層的分類モデル</h1>
@@ -94,7 +94,7 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/ojus.png">
+        <img src="@/assets/page_research_thumbnail/ojus.png" alt="">
       </div>
       <div class="content">
         <h1>野良猫・飼い猫判別のための猫の顔分類技術の提案</h1>
@@ -112,7 +112,7 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/neo.png">
+        <img src="@/assets/page_research_thumbnail/neo.png" alt="">
       </div>
       <div class="content">
         <h1>同時手番ゲームにおいて敵行動を予測し行動するエージェントの検証</h1>
@@ -128,7 +128,7 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/ikechan.png">
+        <img src="@/assets/page_research_thumbnail/ikechan.png" alt="">
       </div>
       <div class="content">
         <h1>オーバートレーニング予防を目的とした筋負荷推定</h1>
@@ -143,7 +143,7 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/zackey.png">
+        <img src="@/assets/page_research_thumbnail/zackey.png" alt="">
       </div>
       <div class="content">
         <h1>弓道動画における結果予測とフォームフィックスツールの開発</h1>
@@ -160,7 +160,7 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/oda.png">
+        <img src="@/assets/page_research_thumbnail/oda.png" alt="">
       </div>
       <div class="content">
         <h1>3DLiDAR点群データを活用した物体認識システム</h1>
@@ -176,7 +176,7 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/aokiti.png">
+        <img src="@/assets/page_research_thumbnail/aokiti.png" alt="">
       </div>
       <div class="content">
         <h1>一般物体検出とLSTMを用いた画像に基づく屋内位置推定</h1>
