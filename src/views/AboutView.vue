@@ -266,7 +266,7 @@
 .card {
   display: flex;
   width: 90%;
-  margin: 40px auto 96px;
+  margin: 40px auto 140px;
   gap: 56px;
 }
 
@@ -279,9 +279,9 @@
 
   & img {
     width: 100%;
-    -webkit-box-shadow: 10px 10px 60px 0 rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 10px 10px 60px 0 rgba(0, 0, 0, 0.4);
-    box-shadow: 10px 10px 60px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 10px 10px 60px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 10px 10px 60px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 60px 0 rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -337,7 +337,7 @@ ul.author {
   .card {
     width: 80%;
     flex-direction: column;
-    margin: 16px auto 96px;
+    margin: 32px auto 112px;
     gap: 24px;
   }
 
