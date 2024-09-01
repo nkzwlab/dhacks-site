@@ -309,6 +309,7 @@ ul.author {
   display: flex;
   margin-top: 4px;
   gap: 4px;
+  flex-wrap: wrap;
 
   & li {
     display: inline-block;
@@ -321,15 +322,15 @@ ul.author {
   }
 
   .internal {
-    background-color: #AFB42B;
+    background-color: #616161;
   }
 
   .international {
-    background-color: #455A64;
+    background-color: #616161;
   }
 
   .pj {
-    background-color: #0097A7;
+    background-color: #2AB0BF;
   }
 }
 
