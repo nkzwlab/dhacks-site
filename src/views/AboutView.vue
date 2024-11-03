@@ -3,7 +3,9 @@
 
     <div id="top">
       <h1>Research</h1>
-      <p>d-hacksでは人工知能に関する多様な個人研究のほか、地域自治体や民間企業との共同プロジェクトにも多数取り組んでいます。</p>
+      <p>
+        d-hacksでは人工知能に関する多様な個人研究のほか、地域自治体や民間企業との共同プロジェクトにも多数取り組んでいます。
+      </p>
     </div>
 
     <div class="card">
@@ -26,14 +28,32 @@
 
     <div class="card">
       <div class="thumbnail">
+        <img src="../assets/page_research_thumbnail/quantan2.png" alt="">
+      </div>
+      <div class="content">
+        <h1>JumpQ: オブジェクトスパースビデオデータ上における確率的スケジューリング</h1>
+        <ul class="author">
+          <li class="pj">PJ-530</li>
+          <li class="internal">ACM MobiSys Poster [D2]</li>
+        </ul>
+        <div class="separator"></div>
+        <p>
+          モバイルセンシングシステムの主要な課題は、深層学習に基づく物体検出が原因の処理速度のボトルネックを解消することである。本研究では、対象物がまばらに含まれるフレーム列を持つモバイルセンシングシナリオに焦点を当て、確率的スケジューリングアルゴリズム「JumpQ」を提案する。連続して検出がない場合、JumpQは検出頻度を下げ、検出があった場合はフレームごとの検出に即座に戻り、バッファされたフレームも検出する。
+          実験の結果、処理速度が100%以上向上し、精度への影響はごくわずかであることが確認された。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail">
         <img src="../assets/page_research_thumbnail/quantan.png" alt="">
       </div>
       <div class="content">
         <h1>DeepCounter: 深層学習を用いた細粒度なゴミ排出量データ収集手法</h1>
         <ul class="author">
           <li class="pj">PJ-530</li>
-          <li class="international">IEEE RTCSA</li>
-          <li class="internal">情報学会論文誌</li>
+          <li class="internal">情報学会論文誌 [D1]</li>
+          <li class="international">IEEE RTCSA [B4]</li>
         </ul>
         <div class="separator"></div>
         <p>
@@ -122,7 +142,10 @@
         </ul>
         <div class="separator"></div>
         <p>
-          近年、深層学習による声質変換によって変換精度が向上し、付加情報を加えることで発話の一部のみを変換する研究が行われている。特に、変分オートエンコーダ（Variational AutoEncoder: VAE）のような、潜在空間の分布を用いて学習を行う手法を声質変換に適用する試みが盛んに行われている。 本研究では、データセットの分布をもつれなく適切に得る手法であるFactorVAEを声質変換に適用することで、発話の分布に基づいた多者間声質変換手法 FactorVAE-VC を提案する。
+          近年、深層学習による声質変換によって変換精度が向上し、付加情報を加えることで発話の一部のみを変換する研究が行われている。特に、変分オートエンコーダ（Variational
+          AutoEncoder: VAE）のような、潜在空間の分布を用いて学習を行う手法を声質変換に適用する試みが盛んに行われている。
+          本研究では、データセットの分布をもつれなく適切に得る手法であるFactorVAEを声質変換に適用することで、発話の分布に基づいた多者間声質変換手法
+          FactorVAE-VC を提案する。
         </p>
       </div>
     </div>
