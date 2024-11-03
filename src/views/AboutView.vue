@@ -26,6 +26,25 @@
 
     <div class="card">
       <div class="thumbnail">
+        <img src="../assets/page_research_thumbnail/quantan.png" alt="">
+      </div>
+      <div class="content">
+        <h1>DeepCounter: 深層学習を用いた細粒度なゴミ排出量データ収集手法</h1>
+        <ul class="author">
+          <li class="pj">PJ-530</li>
+          <li class="international">IEEE RTCSA</li>
+          <li class="internal">情報学会論文誌</li>
+        </ul>
+        <div class="separator"></div>
+        <p>
+          ゴミ収集車の後部に搭載されたカメラで撮影された映像から、収集されたゴミ袋の数を自動的にカウントする車載センシングシステムDeepCounterを提案する。リアルタイム物体検出アルゴリズムとしてよく知られているシングルショットマルチボックス検出器(SSD)に基づいて、検出-追跡-計数(DTC)アルゴリズムを開発し実装する。
+          藤沢市における現実的なゴミ収集の映像を用いた実験評価により、提案アプローチの実現可能性を検証した。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail">
         <img src="../assets/page_research_thumbnail/bekku.png" alt="">
       </div>
       <div class="content">
