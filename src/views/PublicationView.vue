@@ -13,8 +13,14 @@
       2022.</p>
     <p>Hamanaka, Satoki, et al. A Comparative Study of CIPN Symptom Estimation Methods Based on Machine Learning. 2021,
       p. 4.</p>
+    <p>三上量弘, et al. “DeepCounter: 深層学習を用いた細粒度なゴミ排出量データ収集手法.” 情報処理学会論文誌, vol. 61,
+      no. 1, 2020, pp. 36–48.</p>
     <p>谷村朋樹, et al. “GANonymizer: 物体検出と敵対的生成を用いた映像匿名化手法.” 情報処理学会論文誌, vol. 60, no. 10,
       2019, pp. 1829–44.</p>
+    <p>Mikami, Kazuhiro, et al. “DeepCounter: Using Deep Learning to Count Garbage Bags.” 2018 IEEE 24th International
+      Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), IEEE, 2018, pp. 1–10.</p>
+    <p>Mikami, Kazuhiro, et al. “Using Deep Learning to Count Garbage Bags.” Proceedings of the 16th ACM Conference on
+      Embedded Networked Sensor Systems, ACM, 2018.</p>
 
     <h1>国内会議</h1>
     <p>本山理奈, et al. “野良猫・飼い猫判別のための猫の顔分類技術の提案.” 研究報告ユビキタスコンピューティングシステム（UBI）, vol. 2023-UBI-79, 2023, pp. 1–7.</p>

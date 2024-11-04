@@ -48,6 +48,18 @@
 
           <div class="gallery-item">
             <div class="profile-picture">
+              <img src="@/assets/profile/quantan.png" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+              <h3>D2 quantan</h3>
+            </div>
+            <div class="research">
+              物体検出高速化
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="profile-picture">
               <img src="@/assets/profile/hamachu.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
