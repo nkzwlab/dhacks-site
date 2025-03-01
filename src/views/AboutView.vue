@@ -31,7 +31,7 @@
         <img src="../assets/page_research_thumbnail/quantan2.png" alt="">
       </div>
       <div class="content">
-        <h1>JumpQ: オブジェクトスパースビデオデータ上における確率的スケジューリング</h1>
+        <h1>JumpQ: 物体スパースな動画データにおける確率的スケジューリング</h1>
         <ul class="author">
           <li class="pj">PJ-530</li>
           <li class="internal">ACM MobiSys Poster [D2]</li>
@@ -68,10 +68,10 @@
         <img src="../assets/page_research_thumbnail/bekku.png" alt="">
       </div>
       <div class="content">
-        <h1>DynamicECM: ポットホール検出のための安定かつ効率的な動的アンサンブル法</h1>
+        <h1>DynamicECM: ポットホール検出のための安定かつ効率的な動的アンサンブル手法</h1>
         <ul class="author">
           <li class="pj">PJ-Edogawa</li>
-          <li class="international">Pervasive and Mobile Computing [M2]</li>
+          <li class="international">Elsevier Pervasive and Mobile Computing [M2]</li>
           <li class="international">IEEE SMARTCOMP [M2]</li>
         </ul>
         <div class="separator"></div>
@@ -83,17 +83,16 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/akiho.png" alt="">
+        <img src="@/assets/page_research_thumbnail/hhiromasa.png" alt="">
       </div>
       <div class="content">
-        <h1>フィギュアスケートにおけるステップシークエンスの自動レベル判定</h1>
+        <h1>連続的マルチタスク学習における正の知識転移のための動的モデルマージング</h1>
         <ul class="author">
-          <li class="internal">人工知能学会 [B4]</li>
-          <li class="internal">IPSJ UBI [B3]</li>
+          <li class="pj">PJ-NTT</li>
         </ul>
         <div class="separator"></div>
         <p>
-          フィギュアスケートのステップシークエンスは12種類の詳細な動き（エレメント）を組み合わせて行う技で、レベル1からレベル4で判定される。公式試合では13人の審判が高速で連続して行われる技をリアルタイムに目視で確認し採点しているため、採点の公平性が問われている。本研究では、基本的技術が反映される重要な技でありながら、正確な採点が行われていない可能性があるステップシークエンスに焦点を当て、点数の算出につながるレベルを自動で判定する手法を提案する。
+          近年、AIモデルは動的な運用環境に適応するため、知識表現の継続的な更新が求められている。モデルマージは、その更新を低コストで実現する手法として注目されているが、既存手法は正の知識転移の非対称性を考慮しておらず、最適な性能を発揮できない。本研究では、この課題を解決するため、新たな学習目標を導入した動的モデルマージ手法を提案する。本手法は、タスク間の非対称性を考慮し、マージ係数を動的に調整することで、より効果的な知識統合を実現する。実験結果により、提案手法が既存手法を大きく上回る性能を示し、コストシミュレーションでも継続的かつ低コストな知識更新が可能であることが確認された。
         </p>
       </div>
     </div>
@@ -117,23 +116,6 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/hhiromasa.png" alt="">
-      </div>
-      <div class="content">
-        <h1>知識蒸留における教師モデル選別手法の提案</h1>
-        <ul class="author">
-          <li class="international">A3 Foresight [M1]</li>
-          <li class="internal">人工知能学会 [B3]</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          深層学習モデルのサイズを削減し、推論時間を高速化するために、知識蒸留と呼ばれる手法がある。この手法では、大きなモデルの出力をより軽量なモデルに模倣させることで、教師モデルの知識表現を生徒モデルに継承する。本研究では、複数の教師モデルの中から、生徒モデルに対して最適な教師モデルの組み合わせを選別しながら知識蒸留を行うフレームワークを提案する。実験により、提案手法によって訓練された生徒モデルの性能がランダムに組み合わせた生徒モデルを上回ることが示された。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
         <img src="@/assets/page_research_thumbnail/gozu.png" alt="">
       </div>
       <div class="content">
@@ -149,68 +131,54 @@
 
     <div class="card">
       <div class="thumbnail">
+        <img src="@/assets/page_research_thumbnail/hiyon2.png" alt="">
+      </div>
+      <div class="content">
+        <h1>"FARe-MAML: Feature-Adaptive Re-MAML" 入力データの特徴量を考慮したメタ学習手法の提案</h1>
+        <ul class="author">
+          <li class="pj">PJ-NTT</li>
+          <li class="international">ACM MobiSys Poster [B4]</li>
+          <li class="internal">RG Award</li>
+        </ul>
+        <div class="separator"></div>
+        <p>
+          近年、ディープラーニングの発展により多くのモデルが提案されているが、高性能なモデルの学習には大量のラベル付きデータが必要であり、データ収集に高コストと長時間を要することが課題である。この問題に対処する手法としてメタ学習が注目されており、類似タスクの学習結果から共通のメタ知識を獲得し、新たなタスクを効率的に学習できる。本研究では、メタ知識の汎化能力向上を目的とし、適用データセットに応じたメタ学習を再度行う手法を提案する。これにより、新たなタスクへの適応力を高め、高精度なモデルの構築を目指す。クロスドメイン設定を含む多角的な検証の結果、本手法FARe-MAMLは既存のメタ学習手法よりも高い汎用性と実用性を示した。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail">
+        <img src="../assets/page_research_thumbnail/ojus.png" alt="">
+      </div>
+      <div class="content">
+        <h1>LostCatID: 迷い猫判別のための野良猫・飼い猫分類</h1>
+        <ul class="author">
+          <li class="international">ACM MobiSys Demo [B4]</li>
+          <li class="internal">IPSJ UBI [B3]</li>
+          <li class="internal">RG Award</li>
+        </ul>
+        <div class="separator"></div>
+        <p>
+          猫の飼育数の増加に伴い、迷い猫の問題が深刻化している。保護されても収容スペースの制約により約10日後には殺処分される現状がある。マイクロチップや迷子札の装着率は低く、効果的な対策が求められている。本研究では、猫に負担をかけず、高精度に迷い猫を識別するための画像ベースの識別技術を提案する。迷い猫識別のための4種類の独自データセットを構築し、公開した。実験では、人間の識別精度（87.88%）より深層学習モデル（95.07%）が優れていることを示した。また、保護施設のデータで検証し、高精度を維持できることを確認した。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail">
         <img src="@/assets/page_research_thumbnail/hiyon.png" alt="">
       </div>
       <div class="content">
         <h1>多クラス分類に向けた階層的分類モデル</h1>
         <ul class="author">
           <li class="pj">PJ-NTT</li>
-          <li class="international">ACM MobiSys Poster [B4]</li>
           <li class="internal">IPSJ UBI [B3]</li>
         </ul>
         <div class="separator"></div>
         <p>
           近年、数多くのディープラーニングモデルが提案され、それらを活用した多種多様なデータセットを基にした画像分類の研究が進められている。しかしながら、分類クラスの総数が増加するにつれて分類の精度は低下するという問題があり、特に画像分類タスクにおける課題として顕在化している。さらに、データセット内で類似度が高いクラスにおける分類の精度が低いことも課題として挙げられる。
           本研究では、複数のモデルを使用し、階層的にクラス分類を実現する新しい手法を提案する。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/ojus.png" alt="">
-      </div>
-      <div class="content">
-        <h1>野良猫・飼い猫判別のための猫の顔分類技術の提案</h1>
-        <ul class="author">
-          <li class="international">ACM MobiSys Demo [B4]</li>
-          <li class="internal">IPSJ UBI [B3]</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          近年、迷い猫の問題が増加しており、マイクロチップの装着義務化が進められているものの、装着率は依然として低い。また、野良猫と飼い猫の識別が困難であることによる、誤った迷い猫の処理の事例が複数報告されている。本研究では、飼い猫と野良猫には顔つきに差異があるという仮説のもと、猫の顔画像分類による野良猫と飼い猫の判別技術を提案する。
-          6つの異なる画像認識アルゴリズム（ResNet-50、AlexNet、VGG-16、GoogleNet、DenseNet201、MobileNetV2）で分類精度を比較した。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/neo.png" alt="">
-      </div>
-      <div class="content">
-        <h1>同時手番ゲームにおいて敵行動を予測し行動するエージェントの検証</h1>
-        <ul class="author">
-        </ul>
-        <div class="separator"></div>
-        <p>
-          同時手番ゲームにおいて、プレイヤーは相手の行動や情報を予測して行動することがある。これは、予測した行動に対して利得が高い行動をすることで、予測が当たった時に大きなアドバンテージを取れるためである。本研究では、敵の行動を考慮して行動する強化学習AIを開発し、Pokemon
-          Showdownにおいて評価を行った。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/ikechan.png" alt="">
-      </div>
-      <div class="content">
-        <h1>オーバートレーニング予防を目的とした筋負荷推定</h1>
-        <ul class="author">
-        </ul>
-        <div class="separator"></div>
-        <p>
-          過剰なストレスにより慢性疲労に陥り、パフォーマンスが低下し短期間では回復しなくなるオーバートレーニングは深刻な問題とされている。本研究では、骨格情報や生体情報を用いて筋負荷を推定することで、オーバートレーニング症候群の回避やトレーニングの見直しを目指す。本研究ではランニングにおける骨格情報や生体情報を用いて、筋電位測定器を使用せずに筋負荷予測を行う。
         </p>
       </div>
     </div>
