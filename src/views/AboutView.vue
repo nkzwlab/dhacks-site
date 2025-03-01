@@ -201,21 +201,6 @@
 
     <div class="card">
       <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/oda.png" alt="">
-      </div>
-      <div class="content">
-        <h1>3DLiDAR点群データを活用した物体認識システムの最適化手法</h1>
-        <ul class="author">
-        </ul>
-        <div class="separator"></div>
-        <p>
-          近年、自動運転車や自律型ロボットの開発が進んでおり、周囲の状況を正確に認識し、それに基づいてアクチュエーターを制御することが求められている。現在、カメラや距離センサーなどを活用して環境認識を行っているが、正確な認識は依然として困難である。特に、LiDARセンサーは点群データを取得できるが、距離が遠くなると点群の密度が低下し、物体認識精度が低下する課題がある。本研究では、物体検出にハードネガティブマイニングを適用し、3D LiDARの点群データからより高精度な物体認識を実現するシステムを提案する。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
         <img src="@/assets/page_research_thumbnail/aokiti.png" alt="">
       </div>
       <div class="content">
@@ -227,6 +212,54 @@
         <div class="separator"></div>
         <p>
           本研究では、一般物体検出とCNNおよびLSTMを組み合わせ、物体の特徴や数を考慮した新しい自己位置推定モデルを提案する。近年、GPS非依存の画像ベース自己位置推定が研究されているが、従来手法は物体単位の特徴を適切に考慮できず、類似物体が多い室内環境に不向きである。本手法では、YOLOv8で検出した物体をCNNで特徴抽出し、LSTMで統合することで、複数の物体特徴を活用した位置推定を実現する。大学内の研究室データセットを用いた実験により、従来のCNNモデルと比較して14.4%の精度向上を達成し、物体特徴に基づく手法の有望性を示した。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail">
+        <img src="@/assets/page_research_thumbnail/oda.png" alt="">
+      </div>
+      <div class="content">
+        <h1>3DLiDAR点群データを活用した物体認識システムの最適化手法</h1>
+        <ul class="author">
+        </ul>
+        <div class="separator"></div>
+        <p>
+          近年、自動運転車や自律型ロボットの開発が進んでおり、周囲の状況を正確に認識し、それに基づいてアクチュエーターを制御することが求められている。現在、カメラや距離センサーなどを活用して環境認識を行っているが、正確な認識は依然として困難である。特に、LiDARセンサーは点群データを取得できるが、距離が遠くなると点群の密度が低下し、物体認識精度が低下する課題がある。本研究では、物体検出にハードネガティブマイニングを適用し、3D
+          LiDARの点群データからより高精度な物体認識を実現するシステムを提案する。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail">
+        <img src="@/assets/page_research_thumbnail/sueko.png" alt="">
+      </div>
+      <div class="content">
+        <h1>三段階に分かれたテキストベースの人物識別</h1>
+        <ul class="author">
+          <li class="pj">PJ-NICT</li>
+          <li class="internal">IPSJ UBI [B4]</li>
+        </ul>
+        <div class="separator"></div>
+        <p>
+          本研究では、人物再識別、クロスモダリティ、複数物体追跡、物体検出などのコンピュータビジョン技術を統合し、テキストベースの人物識別システムを開発した。本システムは、先端研究と実世界での実装のギャップを埋めることを目的とし、実環境に適した設計となっている。タスクのワークフローは3段階に分かれ、カメラのビデオデータを加工し、テキストベースの識別に適した形式に変換する。このアプローチにより、複雑な識別タスクへの対応力を示すとともに、実用的な展開の可能性を強調している。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thumbnail">
+        <img src="@/assets/page_research_thumbnail/ryokawa.png" alt="">
+      </div>
+      <div class="content">
+        <h1>少量皮膚疾患データセットのセグメンテーションにおける転移学習手法の検討</h1>
+        <ul class="author">
+        </ul>
+        <div class="separator"></div>
+        <p>
+          皮膚疾患のセグメンテーションは盛んに研究されているが、データセットのラベリングに高コストがかかり、データ不足が課題となっている。特に、既存の公開データセットは皮膚がん関連（メラノーマなど）に限定されており、アトピーや蕁麻疹などのデータが不足している。この問題は、疾患の診断補助や深刻度測定、疾患分類の精度向上を妨げる要因となっている。本研究では、公開皮膚疾患データセットを活用し、ドメイン適応を用いた転移学習手法を提案する。これにより、少量データセットでも皮膚疾患のセグメンテーション精度を向上させ、データ不足の課題を解決することを目指す。
         </p>
       </div>
     </div>
