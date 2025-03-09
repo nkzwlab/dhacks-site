@@ -2,10 +2,10 @@
 
 name: Deploy to production
 
-# on dispatch event from github UI
 on:
   workflow_dispatch:
 
+# on dispatch event from github UI
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -21,17 +21,19 @@ jobs:
         run: npm run build
       - name: Install WireGuard
         run: |
+          sudo add-apt-repository universe
           sudo apt update
-          sudo apt install -y wireguard openresolv
+          sudo apt install -y wireguard resolvconf
       - name: Setup WireGuard
         run: |
           echo "${{ secrets.VPN_CONF }}" | base64 -d > /tmp/wg0.conf
           sudo mv /tmp/wg0.conf /etc/wireguard/wg0.conf
-          sudo wg-quick up wg0
+          sudo chmod 600 /etc/wireguard/wg0.conf
+          sudo systemctl enable --now wg-quick@wg0
       - name: Deploy file
         run: |
           echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > /tmp/id_rsa
           chmod 600 /tmp/id_rsa
           scp -i /tmp/id_rsa -o StrictHostKeyChecking=no -r ./dist/* jnroot@d-hacks.jn.sfc.keio.ac.jp:/var/www/html
       - name: Disconnect WireGuard
-        run: sudo wg-quick down wg0
+        run: sudo systemctl stop wg-quick@wg0
