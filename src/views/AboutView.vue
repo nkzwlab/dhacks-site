@@ -195,10 +195,10 @@ const fetchResearchItems = async () => {
     loading.value = true
     error.value = null
 
-    // const response = await axios.get<ApiResponse>('/api/research-items')
+    const response = await axios.get<ApiResponse>('/api/research-items')
 
-    if (true) {
-      researchItems.value = ({ "success": true, "data": [{ "_id": "689741180e8940cf7a6f1ad0", "imageUrl": "/uploads/d4264ed7-b16d-49d0-964d-c49788ee84bc.png", "title": "CC-Replay: 深層学習を用いた画像分類の継続学習におけるクラス難易度を考慮した容量制御", "tags": [{ "label": "PJ-NTT", "color": "#2ab0bf" }, { "label": "学会誌「コンピュータソフトウェア」[D2]", "color": "#616161" }], "description": "実社会における出力クラスの増加に対応可能な画像分類を実現するため、上限の定められたデータ保持容量を効率的に用いた継続学習手法を提案する。継続学習の先行研究として、一部のデータをコアデータとして保持し、新たに追加された訓練データと併せて再学習を繰り返すリプレイ手法では、保持するデータ数がクラスごとに一定であった。 本研究では、各クラスの難易度に応じたコアデータの容量制御およびそれを用いた継続学習手法「CC-replay」を提案し、限られた容量下でより効率的にリプレイすることを目指す。" }] }).data
+    if (response.data.success) {
+      researchItems.value = response.data.data
     } else {
       error.value = '研究データの取得に失敗しました'
     }
