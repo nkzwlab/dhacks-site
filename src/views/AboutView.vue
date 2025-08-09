@@ -8,246 +8,31 @@
       </p>
     </div>
 
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/hirono.png" alt="">
-      </div>
-      <div class="content">
-        <h1>CC-Replay: 深層学習を用いた画像分類の継続学習におけるクラス難易度を考慮した容量制御</h1>
-        <ul class="author">
-          <li class="pj">PJ-NTT</li>
-          <li class="internal">学会誌「コンピュータソフトウェア」[D2]</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          実社会における出力クラスの増加に対応可能な画像分類を実現するため、上限の定められたデータ保持容量を効率的に用いた継続学習手法を提案する。継続学習の先行研究として、一部のデータをコアデータとして保持し、新たに追加された訓練データと併せて再学習を繰り返すリプレイ手法では、保持するデータ数がクラスごとに一定であった。
-          本研究では、各クラスの難易度に応じたコアデータの容量制御およびそれを用いた継続学習手法「CC-replay」を提案し、限られた容量下でより効率的にリプレイすることを目指す。
-        </p>
-      </div>
+    <div v-if="loading" class="loading">
+      <p>研究データを読み込み中...</p>
     </div>
 
-    <div class="card">
-      <div class="thumbnail">
-        <img src="../assets/page_research_thumbnail/quantan2.png" alt="">
-      </div>
-      <div class="content">
-        <h1>JumpQ:
-          物体スパースな動画データにおける物体検出駆動型モバイルセンシング高速化のための確率的スケジューリング</h1>
-        <ul class="author">
-          <li class="pj">PJ-530</li>
-          <li class="internal">ACM MobiSys Poster [D2]</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          モバイルセンシングシステムの主要な課題は、深層学習に基づく物体検出が原因の処理速度のボトルネックを解消することである。本研究では、対象物がまばらに含まれるフレーム列を持つモバイルセンシングシナリオに焦点を当て、確率的スケジューリングアルゴリズム「JumpQ」を提案する。連続して検出がない場合、JumpQは検出頻度を下げ、検出があった場合はフレームごとの検出に即座に戻り、バッファされたフレームも検出する。
-          実験の結果、処理速度が100%以上向上し、精度への影響はごくわずかであることが確認された。
-        </p>
-      </div>
+    <div v-else-if="error" class="error">
+      <p>{{ error }}</p>
     </div>
 
-    <div class="card">
-      <div class="thumbnail">
-        <img src="../assets/page_research_thumbnail/quantan.png" alt="">
-      </div>
-      <div class="content">
-        <h1>DeepCounter: 深層学習を用いた細粒度なゴミ排出量データ収集手法</h1>
-        <ul class="author">
-          <li class="pj">PJ-530</li>
-          <li class="internal">情報学会論文誌 [D1]</li>
-          <li class="international">IEEE RTCSA [B4]</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          ゴミ収集車の後部に搭載されたカメラで撮影された映像から、収集されたゴミ袋の数を自動的にカウントする車載センシングシステムDeepCounterを提案する。リアルタイム物体検出アルゴリズムとしてよく知られているシングルショットマルチボックス検出器(SSD)に基づいて、検出-追跡-計数(DTC)アルゴリズムを開発し実装する。
-          藤沢市における現実的なゴミ収集の映像を用いた実験評価により、提案アプローチの実現可能性を検証した。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="../assets/page_research_thumbnail/bekku.png" alt="">
-      </div>
-      <div class="content">
-        <h1>DynamicECM: ポットホール検出のための安定かつ効率的な動的アンサンブル手法</h1>
-        <ul class="author">
-          <li class="pj">PJ-Edogawa</li>
-          <li class="international">Elsevier Pervasive and Mobile Computing [M2]</li>
-          <li class="international">IEEE SMARTCOMP [M2]</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          道路の損傷は交通の危険要因となるが、調査費用が高いため定期点検は困難である。そこで、本研究では、ゴミ収集車のダッシュカム映像を活用し、低コストで道路調査を行う手法を提案する。従来の研究では、物体検出モデルと画像分類モデルを組み合わせたECMにより誤検出を抑制したが、速度と精度の両立が課題だった。そこで、必要時のみECMを適用するDynamicECMを開発し、安定した推論を実現した。評価実験の結果、DynamicECMは従来手法よりも精度が高く、速度と検出性能のバランスに優れることが確認された。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/hhiromasa.png" alt="">
-      </div>
-      <div class="content">
-        <h1>連続的マルチタスク学習における正の知識転移のための動的モデルマージング</h1>
-        <ul class="author">
-          <li class="pj">PJ-NTT</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          近年、AIモデルは動的な運用環境に適応するため、知識表現の継続的な更新が求められている。モデルマージは、その更新を低コストで実現する手法として注目されているが、既存手法は正の知識転移の非対称性を考慮しておらず、最適な性能を発揮できない。本研究では、この課題を解決するため、新たな学習目標を導入した動的モデルマージ手法を提案する。本手法は、タスク間の非対称性を考慮し、マージ係数を動的に調整することで、より効果的な知識統合を実現する。実験結果により、提案手法が既存手法を大きく上回る性能を示し、コストシミュレーションでも継続的かつ低コストな知識更新が可能であることが確認された。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/hhiromasa2.png" alt="">
-      </div>
-      <div class="content">
-        <h1>信号無視検知のための希少な現実生成</h1>
-        <ul class="author">
-          <li class="pj">PJ-Faked-City</li>
-          <li class="international">ACM MobiSys Poster [M2]</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          大規模かつ多様なデータセットの準備は、強力な深層学習モデルの訓練に不可欠である。しかしながら、特定のデータが理論的には可能であるものの、実際に観察することが困難なケースも存在する（例：信号無視）。本研究では、物体検出モデルと画像生成モデルを組み合わせることで、フェイク動画を生成する手法の可能性を示す。具体的には、既存の動画を部分的に編集して、信号無視のドラレコ映像を人工的に作成することで、「希少な現実」を生成する。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/gozu.png" alt="">
-      </div>
-      <div class="content">
-        <h1>エンド・ツー・エンドの自動ギタータブ譜転写のためのデータ表現とデータセットの提案</h1>
-        <ul class="author">
-        </ul>
-        <div class="separator"></div>
-        <p>
-          自動タブ譜転写をエンド・ツー・エンドの音声認識タスクとして行うことを目的として、適したデータセットを作成する。まず、タブ譜自動転写におけるデータを選定、収集を行う。その後、タブ譜作成に最適なデータフォーマットを作成しデータセットを作成する。本研究では、作成したデータセットの一部の情報を用いて、エンド・ツー・エンドの音声認識タスクとして新たなデータ表現を提案し、ピッチとデュレーションの推定モデルを構築し実験を行った。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/hiyon.png" alt="">
-      </div>
-      <div class="content">
-        <h1>"FARe-MAML: Feature-Adaptive Re-MAML" 入力データの特徴量を考慮したメタ学習手法の提案</h1>
-        <ul class="author">
-          <li class="pj">PJ-NTT</li>
-          <li class="international">ACM MobiSys Poster [B4]</li>
-          <li class="internal">RG Award</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          高性能な深層学習モデルの学習には大量のラベル付きデータが必要であり、その収集には膨大なコストと時間がかかる。
-          この課題に対し、類似タスクの学習結果から共通の知識（メタ知識）を獲得し、新たなタスクの学習を効率化するメタ学習が有効とされている。
-          本研究では、メタ学習の汎化能力向上を目的に、新たなタスクに応じた適応的なメタ学習を再度行うFARe-MAMLを提案する。これにより、少数のデータでも高精度なモデル構築を目指す。
-          クロスドメイン設定での検証の結果、FARe-MAMLは既存手法よりも高い汎用性と実用性を示した。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="../assets/page_research_thumbnail/ojus.png" alt="">
-      </div>
-      <div class="content">
-        <h1>LostCatID: 迷い猫判別のための野良猫・飼い猫分類</h1>
-        <ul class="author">
-          <li class="international">ACM MobiSys Demo [B4]</li>
-          <li class="internal">IPSJ UBI [B3]</li>
-          <li class="internal">RG Award</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          猫の飼育数の増加に伴い、迷い猫の問題が深刻化している。保護されても収容スペースの制約により約10日後には殺処分される現状がある。マイクロチップや迷子札の装着率は低く、効果的な対策が求められている。本研究では、猫に負担をかけず、高精度に迷い猫を識別するための画像ベースの識別技術を提案する。迷い猫識別のための4種類の独自データセットを構築し、公開した。実験では、人間の識別精度（87.88%）より深層学習モデル（95.07%）が優れていることを示した。また、保護施設のデータで検証し、高精度を維持できることを確認した。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/zackey.png" alt="">
-      </div>
-      <div class="content">
-        <h1>弓道動画における結果予測とフォームフィックスツールの開発</h1>
-        <ul class="author">
-          <li class="internal">IPSJ UBI [B3]</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          Detectron2による骨格推定と深層学習モデルを組み合わせた、弓道の的中結果予測システムの開発に加えて、フォームの改善方法を提案するフォームフィックスツールの開発を目指す。
-          的中結果予測システムは、LSTMやResNet50を用いて、時系列全体に注目した予測を目指す。フォームの改善方法の提案は、結果に対する各関節情報の寄与度を元に決定する。寄与度は、動画の各関節の座標の動きを別動画の同じ関節の座標に変化させた際の的中確率の変化を元に算出する。実験の結果、ResNet50を用いたモデルは、LSTMを用いたモデルと比較して分類精度が向上し、フォーム全体を考慮する能力も優れていることが確認された。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/aokiti.png" alt="">
-      </div>
-      <div class="content">
-        <h1>一般物体検出とLSTMを用いた画像に基づく屋内位置推定</h1>
-        <ul class="author">
-          <li class="international">ACM MobiSys Demo [B2]</li>
-          <li class="internal">IPSJ UBI [B2]</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          本研究では、一般物体検出とCNNおよびLSTMを組み合わせ、物体の特徴や数を考慮した新しい自己位置推定モデルを提案する。近年、GPS非依存の画像ベース自己位置推定が研究されているが、従来手法は物体単位の特徴を適切に考慮できず、類似物体が多い室内環境に不向きである。本手法では、YOLOv8で検出した物体をCNNで特徴抽出し、LSTMで統合することで、複数の物体特徴を活用した位置推定を実現する。大学内の研究室データセットを用いた実験により、従来のCNNモデルと比較して14.4%の精度向上を達成し、物体特徴に基づく手法の有望性を示した。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/oda.png" alt="">
-      </div>
-      <div class="content">
-        <h1>3DLiDAR点群データを活用した物体認識システムの最適化手法</h1>
-        <ul class="author">
-        </ul>
-        <div class="separator"></div>
-        <p>
-          近年、自動運転車や自律型ロボットの開発が進んでおり、周囲の状況を正確に認識し、それに基づいてアクチュエーターを制御することが求められている。現在、カメラや距離センサーなどを活用して環境認識を行っているが、正確な認識は依然として困難である。特に、LiDARセンサーは点群データを取得できるが、距離が遠くなると点群の密度が低下し、物体認識精度が低下する課題がある。本研究では、物体検出にハードネガティブマイニングを適用し、3D
-          LiDARの点群データからより高精度な物体認識を実現するシステムを提案する。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/sueko.png" alt="">
-      </div>
-      <div class="content">
-        <h1>三段階に分かれたテキストベースの人物識別</h1>
-        <ul class="author">
-          <li class="pj">PJ-NICT</li>
-          <li class="internal">IPSJ UBI [B4]</li>
-        </ul>
-        <div class="separator"></div>
-        <p>
-          本研究では、人物再識別、クロスモダリティ、複数物体追跡、物体検出などのコンピュータビジョン技術を統合し、テキストベースの人物識別システムを開発した。本システムは、先端研究と実世界での実装のギャップを埋めることを目的とし、実環境に適した設計となっている。タスクのワークフローは3段階に分かれ、カメラのビデオデータを加工し、テキストベースの識別に適した形式に変換する。このアプローチにより、複雑な識別タスクへの対応力を示すとともに、実用的な展開の可能性を強調している。
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="thumbnail">
-        <img src="@/assets/page_research_thumbnail/ryokawa.png" alt="">
-      </div>
-      <div class="content">
-        <h1>少量皮膚疾患データセットのセグメンテーションにおける転移学習手法の検討</h1>
-        <ul class="author">
-        </ul>
-        <div class="separator"></div>
-        <p>
-          皮膚疾患のセグメンテーションは盛んに研究されているが、データセットのラベリングに高コストがかかり、データ不足が課題となっている。特に、既存の公開データセットは皮膚がん関連（メラノーマなど）に限定されており、アトピーや蕁麻疹などのデータが不足している。この問題は、疾患の診断補助や深刻度測定、疾患分類の精度向上を妨げる要因となっている。本研究では、公開皮膚疾患データセットを活用し、ドメイン適応を用いた転移学習手法を提案する。これにより、少量データセットでも皮膚疾患のセグメンテーション精度を向上させ、データ不足の課題を解決することを目指す。
-        </p>
+    <div v-else>
+      <div v-for="(item, index) in researchItems" :key="item._id" class="card" :class="{ 'reverse': index % 2 === 1 }">
+        <div class="thumbnail">
+          <img :src="`/api${item.imageUrl}`" :alt="item.title">
+        </div>
+        <div class="content">
+          <h1>{{ item.title }}</h1>
+          <ul class="author">
+            <li v-for="tag in item.tags" :key="tag.label" :class="getTagClass(tag.color)">
+              {{ tag.label }}
+            </li>
+          </ul>
+          <div class="separator"></div>
+          <p>
+            {{ item.description }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -258,7 +43,7 @@
   min-height: 100vh;
   align-items: center;
   font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Hiragino Kaku Gothic Pro',
-  'ヒラギノ角ゴ Pro W3', sans-serif;
+    'ヒラギノ角ゴ Pro W3', sans-serif;
   padding-bottom: 3rem;
 }
 
@@ -279,8 +64,19 @@
   gap: 56px;
 }
 
-.card:nth-child(odd) {
+.card.reverse {
   flex-direction: row-reverse;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #d32f2f;
 }
 
 .thumbnail {
@@ -351,7 +147,7 @@ ul.author {
     gap: 24px;
   }
 
-  .card:nth-child(odd) {
+  .card.reverse {
     flex-direction: column;
   }
 
@@ -369,4 +165,62 @@ ul.author {
 }
 </style>
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
+
+interface Tag {
+  label: string
+  color: string
+}
+
+interface ResearchItem {
+  _id: string
+  imageUrl: string
+  title: string
+  tags: Tag[]
+  description: string
+}
+
+interface ApiResponse {
+  success: boolean
+  data: ResearchItem[]
+}
+
+const researchItems = ref<ResearchItem[]>([])
+const loading = ref(true)
+const error = ref<string | null>(null)
+
+const fetchResearchItems = async () => {
+  try {
+    loading.value = true
+    error.value = null
+
+    // const response = await axios.get<ApiResponse>('/api/research-items')
+
+    if (true) {
+      researchItems.value = ({ "success": true, "data": [{ "_id": "689741180e8940cf7a6f1ad0", "imageUrl": "/uploads/d4264ed7-b16d-49d0-964d-c49788ee84bc.png", "title": "CC-Replay: 深層学習を用いた画像分類の継続学習におけるクラス難易度を考慮した容量制御", "tags": [{ "label": "PJ-NTT", "color": "#2ab0bf" }, { "label": "学会誌「コンピュータソフトウェア」[D2]", "color": "#616161" }], "description": "実社会における出力クラスの増加に対応可能な画像分類を実現するため、上限の定められたデータ保持容量を効率的に用いた継続学習手法を提案する。継続学習の先行研究として、一部のデータをコアデータとして保持し、新たに追加された訓練データと併せて再学習を繰り返すリプレイ手法では、保持するデータ数がクラスごとに一定であった。 本研究では、各クラスの難易度に応じたコアデータの容量制御およびそれを用いた継続学習手法「CC-replay」を提案し、限られた容量下でより効率的にリプレイすることを目指す。" }] }).data
+    } else {
+      error.value = '研究データの取得に失敗しました'
+    }
+  } catch (err) {
+    console.error('API Error:', err)
+    error.value = 'サーバーとの通信でエラーが発生しました'
+  } finally {
+    loading.value = false
+  }
+}
+
+const getTagClass = (color: string) => {
+  if (color === '#2ab0bf') {
+    return 'pj'
+  } else if (color === '#616161') {
+    return 'internal'
+  } else {
+    return 'international'
+  }
+}
+
+onMounted(() => {
+  fetchResearchItems()
+})
 </script>
