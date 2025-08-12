@@ -4,10 +4,14 @@
 1. JNのVPNを有効化
 2. https://d-hacks.jn.sfc.keio.ac.jp/admin/ にアクセスして研究内容を更新する
 
-## サイトの更新
-masterブランチへ push すると、GitHub Actions によるCI/CDが実行され、自動的にサイトに反映されます。
+> [!NOTE]
+> `/admin`ページのソースコードは https://github.com/nkzwlab/dhacks-site-admin にあります。
 
-または、[Actions](https://github.com/nkzwlab/dhacks-site/actions)  の「Deploy to Production」→「Run workflow」を選択すると、手動でデプロイを開始できます。
+## サイトの更新
+masterブランチへ push すると、GitHub Actions によるCI/CDが実行され、自動的にサイトに反映されます。  
+（または、[Actions](https://github.com/nkzwlab/dhacks-site/actions)  の「Deploy to Production」→「Run workflow」を選択すると、手動でデプロイを開始できます）
+
+標準では、`ssh jnroot@d-hacks.jn.sfc.keio.ac.jp`後の`/var/www/html/`以下に配置され、nginx によってホスティングされています。
 
 ## 管理者
 ※ 2024S時点
