@@ -4,6 +4,9 @@ name: Deploy to production
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
 
 # on dispatch event from github UI
 jobs:
