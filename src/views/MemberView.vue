@@ -18,31 +18,7 @@
               <h3>D3 hirono</h3>
             </div>
             <div class="research">
-              継続学習・俳句生成
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div class="profile-picture">
-              <img src="@/assets/profile/synth.png" alt="profile-picture">
-            </div>
-            <div class="gallery-item-name">
-              <h3>D3 synth</h3>
-            </div>
-            <div class="research">
-              音声合成・音声認識
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div class="profile-picture">
-              <img src="@/assets/profile/yuui.png" alt="profile-picture">
-            </div>
-            <div class="gallery-item-name">
-              <h3>D3 yuui</h3>
-            </div>
-            <div class="research">
-              ヘルスケア
+              継続学習
             </div>
           </div>
 
@@ -51,7 +27,7 @@
               <img src="@/assets/profile/quantan.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
-              <h3>D2 quantan</h3>
+              <h3>D3 quantan</h3>
             </div>
             <div class="research">
               物体検出高速化
@@ -63,7 +39,7 @@
               <img src="@/assets/profile/hamachu.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
-              <h3>D1 hamachu</h3>
+              <h3>D2 hamachu</h3>
             </div>
             <div class="research">
               感情推定
@@ -77,39 +53,22 @@
         <div class="gallery">
           <div class="gallery-item">
             <div class="profile-picture">
-              <img src="@/assets/profile/hhiromasa.png" alt="profile-picture">
-            </div>
-            <div class="gallery-item-name">
-              <h3>M2 hhiromasa</h3>
-            </div>
-            <div class="research">
-              知識蒸留・フェイク画像生成
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div class="profile-picture">
               <img src="@/assets/profile/gozu.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
-              <h3>M1 gozu</h3>
+              <h3>M2 gozu</h3>
             </div>
             <div class="research">
               タブ譜推定
             </div>
           </div>
-        </div>
-      </div>
 
-      <div id="Bachelor">
-        <h2>学部生</h2>
-        <div class="gallery">
           <div class="gallery-item">
             <div class="profile-picture">
               <img src="@/assets/profile/hiyon.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
-              <h3>B4 hiyon</h3>
+              <h3>M1 hiyon</h3>
             </div>
             <div class="research">
               メタ学習
@@ -121,46 +80,27 @@
               <img src="@/assets/profile/ojus.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
-              <h3>B4 ojus</h3>
+              <h3>M1 ojus</h3>
             </div>
             <div class="research">
-              動物分類
+              動物分類・分布外検知
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="gallery-item">
-            <div class="profile-picture">
-              <img src="@/assets/profile/ikechan.png" alt="profile-picture">
-            </div>
-            <div class="gallery-item-name">
-              <h3>B4 ikechan</h3>
-            </div>
-            <div class="research">
-              筋負荷推定
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div class="profile-picture">
-              <img src="@/assets/profile/neo.png" alt="profile-picture">
-            </div>
-            <div class="gallery-item-name">
-              <h3>B4 neo</h3>
-            </div>
-            <div class="research">
-              強化学習
-            </div>
-          </div>
-
+      <div id="Bachelor">
+        <h2>学部生</h2>
+        <div class="gallery">
           <div class="gallery-item">
             <div class="profile-picture">
               <img src="@/assets/profile/zackey.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
-              <h3>B3 zackey</h3>
+              <h3>B4 zackey</h3>
             </div>
             <div class="research">
-              コーチングツール
+              VLM・動画検索
             </div>
           </div>
 
@@ -169,7 +109,7 @@
               <img src="@/assets/profile/oda.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
-              <h3>B3 oda</h3>
+              <h3>B4 oda</h3>
             </div>
             <div class="research">
               点群物体認識
@@ -181,10 +121,46 @@
               <img src="@/assets/profile/sueko.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
-              <h3>B3 sueko</h3>
+              <h3>B4 sueko</h3>
             </div>
             <div class="research">
-              骨折判断
+              動画検索
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="profile-picture">
+              <img src="@/assets/profile/izuka.png" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+              <h3>B4 izuka</h3>
+            </div>
+            <div class="research">
+              脳波画像認識
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="profile-picture">
+              <img src="@/assets/profile/tamaki.png" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+              <h3>B4 tamaki</h3>
+            </div>
+            <div class="research">
+              GPUネットワーク最適化
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="profile-picture">
+              <img src="@/assets/profile/nasimaru.png" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+              <h3>B4 nasimaru</h3>
+            </div>
+            <div class="research">
+              自動車傷検知
             </div>
           </div>
 
@@ -193,16 +169,76 @@
               <img src="@/assets/profile/aokiti.png" alt="profile-picture">
             </div>
             <div class="gallery-item-name">
-              <h3>B2 aokiti</h3>
+              <h3>B3 aokiti</h3>
             </div>
             <div class="research">
-              画像位置推定
+              物体検出改善
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="profile-picture">
+              <img src="@/assets/profile/komiya.png" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+              <h3>B3 komiya</h3>
+            </div>
+            <div class="research">
+              自動編曲
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="profile-picture">
+              <img src="@/assets/profile/ouga.png" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+              <h3>B3 ouga</h3>
+            </div>
+            <div class="research">
+              因果推論
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="profile-picture">
+              <img src="@/assets/profile/kny-i.png" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+              <h3>B3 kny-i</h3>
+            </div>
+            <div class="research">
+              オープンセット顔識別
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="profile-picture">
+              <img src="@/assets/profile/ryokawa.png" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+              <h3>B3 ryokawa</h3>
+            </div>
+            <div class="research">
+              皮膚疾患検出・LLM
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="profile-picture">
+              <img src="@/assets/profile/shuuya.png" alt="profile-picture">
+            </div>
+            <div class="gallery-item-name">
+              <h3>B3 shuuya</h3>
+            </div>
+            <div class="research">
+              野球解析
             </div>
           </div>
         </div>
 
         <div id="top">
-          <p>他 +22人</p>
+          <p>他 +14人</p>
         </div>
       </div>
     </div>
