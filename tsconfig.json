@@ -6,7 +6,11 @@
     "allowJs": true,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "importsNotUsedAsValues": "remove",
+    "preserveValueImports": false
   },
 
   "references": [
