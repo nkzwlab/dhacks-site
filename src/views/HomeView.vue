@@ -1,7 +1,12 @@
 <script setup>
 // import TheWelcomez/ from '../components/TheWelcome.vue'
 
-import { onMounted } from 'vue'
+import { onMounted, computed } from 'vue'
+
+const fiscalYear = computed(() => {
+  const now = new Date()
+  return now.getFullYear()
+})
 
 onMounted(() => {
   const canvas = document.getElementById('networkCanvas')
@@ -155,17 +160,23 @@ onMounted(() => {
           私たちは、最新の人工知能技術を実際の問題を解決する際の実用的なアプローチとして使用し、より豊かな社会の実現を目指している、中澤・大越研究室に属する研究グループです。複雑なパターンや現象のモデリングを可能にする深層学習をはじめとした機械学習技術を用いた、都市や家庭向けのシステムの研究・開発に取り組んでいます。
         </div>
         <div class="home__about__description">
-          We are a research group in the Nakazawa and Okoshi Lab dedicated to converting the latest research in
-          machine intelligence into practical applications that can solve real world problems.
-          Currently, we are mainly focused on creating systems for cities and the home with deep
-          neural networks, which allow modeling of highly complex patterns and phenomena. With the
-          amount of data modern systems generate and data already available online, there is a high
-          demand to take advantage of this and potential to create more intelligent software. Our
-          group is still in its infancy, and we are looking for student researchers who are
-          passionate about bringing developing fields to the common people and improving their
-          lives.
+          We are a research group in the Nakazawa and Okoshi Lab dedicated to converting the latest
+          research in machine intelligence into practical applications that can solve real world
+          problems. Currently, we are mainly focused on creating systems for cities and the home
+          with deep neural networks, which allow modeling of highly complex patterns and phenomena.
+          With the amount of data modern systems generate and data already available online, there
+          is a high demand to take advantage of this and potential to create more intelligent
+          software. Our group is still in its infancy, and we are looking for student researchers
+          who are passionate about bringing developing fields to the common people and improving
+          their lives.
         </div>
       </div>
+    </div>
+    <div class="home__joinus">
+      <router-link to="/joinus" class="home__joinus__item">
+        <span class="home__joinus__label">{{ fiscalYear }}年度新規履修のご案内</span>
+        <span class="home__joinus__arrow">›</span>
+      </router-link>
     </div>
   </div>
 </template>
@@ -214,15 +225,52 @@ onMounted(() => {
     }
   }
 
+  &__joinus {
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px 56px;
+    margin: auto;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+      border: 1px solid #ccc;
+      //background: #F0FAFD;
+      border-radius: 12px;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(205, 205, 205, 0.06);
+      }
+    }
+
+    &__label {
+      font-size: 16px;
+      color: #333;
+    }
+
+    &__arrow {
+      position: relative;
+      font-size: 24px;
+      top: -2px;
+      color: #999;
+      line-height: 1;
+    }
+  }
+
   &__about {
     width: 100%;
     max-width: 1170px;
-    padding: 56px 15px;
+    padding: 56px 15px 0;
     margin-bottom: 0;
     min-height: 46px;
     margin: auto;
-    font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Hiragino Kaku Gothic Pro',
-      'ヒラギノ角ゴ Pro W3', sans-serif;
+    font-family:
+      'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3',
+      sans-serif;
     margin: auto;
 
     h3 {
@@ -240,7 +288,7 @@ onMounted(() => {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 15px;
-      padding-bottom: 56px;
+      padding-bottom: 16px;
 
       @media screen and (max-width: 700px) {
         grid-template-columns: repeat(1, 1fr);
