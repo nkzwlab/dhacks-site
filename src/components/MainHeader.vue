@@ -27,6 +27,16 @@
             >{{ item.name }}</RouterLink
           >
         </div>
+        <div class="header__lab">
+          <a href="https://www.jn.sfc.keio.ac.jp/" target="_blank" class="header__lab-link">
+            <img
+              src="/nakazawa-okoshi-lab-logo.svg"
+              alt="Nakazawa Okoshi Lab"
+              class="header__lab-logo"
+              loading="eager"
+            />
+          </a>
+        </div>
       </div>
       <div class="header__items" v-if="displaySizeUnder700 && !showMenu">
         <!-- ハンバーガーメニューボタン -->
@@ -91,7 +101,18 @@
 
   &__logo {
     max-height: 50px;
-    widows: auto;
+    width: auto;
+  }
+
+  &__lab-logo {
+    max-height: 50px;
+    height: 50px;
+    width: auto;
+    display: block;
+    transition: opacity 0.2s ease;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__items {
@@ -99,11 +120,18 @@
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    width: 100%;
     &__vertical {
       flex-direction: column;
       align-items: flex-start;
       gap: 15px;
     }
+  }
+
+  &__lab {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
   }
 
   &__item {
