@@ -4,10 +4,12 @@
     <p>
       履修希望の方は、以下の内容を確認の上、RG初回・第2回講義に来てください。質問のある方は
       <a href="mailto:d-hacks-group@keio.jp">d-hacks-group@keio.jp</a> までご連絡ください。
+      <br />
+      RG初回・第2回講義の案内については、学期始まり頃に以下を参照してください。
+      <br />
+      <a href="https://rg.sfc.keio.ac.jp/ja/">https://rg.sfc.keio.ac.jp/ja/</a>
     </p>
-    <p>
-      以下は2025年度秋のd-hacksの運営方針になります。履修を検討されている方はぜひご覧ください。
-    </p>
+    <p>以下は2025年度秋のd-hacksの運営方針になります。履修を検討されている方はぜひご覧ください。</p>
 
     <iframe
       class="speakerdeck-iframe"
@@ -79,8 +81,8 @@
 .joinus {
   min-height: 100vh;
   align-items: center;
-  font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Hiragino Kaku Gothic Pro',
-  'ヒラギノ角ゴ Pro W3', sans-serif;
+  font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3',
+  sans-serif;
   padding: 3rem;
 }
 
