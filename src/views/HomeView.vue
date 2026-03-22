@@ -157,24 +157,22 @@ onMounted(() => {
       <h3>About us</h3>
       <div class="home__about__description-container">
         <div class="home__about__description">
-          私たちは、最新の人工知能技術を実際の問題を解決する際の実用的なアプローチとして使用し、より豊かな社会の実現を目指している、中澤・大越研究室に属する研究グループです。複雑なパターンや現象のモデリングを可能にする深層学習をはじめとした機械学習技術を用いた、都市や家庭向けのシステムの研究・開発に取り組んでいます。
+          私たちは、最新のAI技術を実世界の課題解決に向けた実用的なアプローチとして活用し、より豊かな社会の実現を目指す研究グループです。慶應義塾大学SFC（湘南藤沢キャンパス）を拠点に、深層学習・機械学習およびコンピュータビジョンを中心とした研究に取り組んでいます。
         </div>
         <div class="home__about__description">
-          We are a research group in the Nakazawa and Okoshi Lab dedicated to converting the latest
-          research in machine intelligence into practical applications that can solve real world
-          problems. Currently, we are mainly focused on creating systems for cities and the home
-          with deep neural networks, which allow modeling of highly complex patterns and phenomena.
-          With the amount of data modern systems generate and data already available online, there
-          is a high demand to take advantage of this and potential to create more intelligent
-          software. Our group is still in its infancy, and we are looking for student researchers
-          who are passionate about bringing developing fields to the common people and improving
-          their lives.
+          We are a research group dedicated to leveraging the latest AI technologies as a practical
+          approach to solving real-world problems and contributing to a more enriched society. Based
+          at Keio University SFC (Shonan Fujisawa Campus), we focus on research centered on deep
+          learning, machine learning, and computer vision, aiming to model complex patterns and
+          phenomena in real-world data. We are actively looking for student researchers who are
+          interested in AI and motivated to work on applying these technologies to real-world
+          challenges.
         </div>
       </div>
     </div>
     <div class="home__joinus">
       <router-link to="/joinus" class="home__joinus__item">
-        <span class="home__joinus__label">{{ fiscalYear }}年度新規履修のご案内</span>
+        <span class="home__joinus__label">{{ fiscalYear }}年度 研究会の新規履修のご案内</span>
         <span class="home__joinus__arrow">›</span>
       </router-link>
     </div>
