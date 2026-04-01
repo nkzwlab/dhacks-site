@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://d-hacks.jn.sfc.keio.ac.jp/sitemap.xml
