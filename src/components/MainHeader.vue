@@ -186,7 +186,7 @@
 } */
 </style>
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 // const items = ['Home', 'About', 'Contact']
 const items: {
   name: string
@@ -218,12 +218,14 @@ const items: {
   }
 ]
 
-const displaySizeUnder700 = ref(window.innerWidth < 700)
+const displaySizeUnder700 = ref(false)
 const showMenu = ref(false)
 
-// on display width change
-window.addEventListener('resize', () => {
+onMounted(() => {
   displaySizeUnder700.value = window.innerWidth < 700
+  window.addEventListener('resize', () => {
+    displaySizeUnder700.value = window.innerWidth < 700
+  })
 })
 
 function toggleMenu() {
