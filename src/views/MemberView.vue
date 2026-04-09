@@ -6,7 +6,7 @@
 
     <div class="galleries">
       <div id="Doctor">
-        <h2>修士課程</h2>
+        <h2>博士課程</h2>
         <div class="gallery">
           <div class="gallery-item">
             <div class="gallery-item-name">
