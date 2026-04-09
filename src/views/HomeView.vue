@@ -157,7 +157,7 @@ onMounted(() => {
       <h3>About us</h3>
       <div class="home__about__description-container">
         <div class="home__about__description">
-          私たちは、最新のAI技術を実世界の課題解決に向けた実用的なアプローチとして活用し、より豊かな社会の実現を目指す研究グループです。慶應義塾大学SFC（湘南藤沢キャンパス）を拠点に、2016年から現在に至るまで、深層学習・機械学習およびコンピュータビジョンを中心とした基礎研究や応用研究に取り組んでいます。
+          私たちは、最新のAI技術を実世界の課題解決に向けた実用的なアプローチとして活用し、より豊かな社会の実現を目指す研究グループです。慶應義塾大学SFC（湘南藤沢キャンパス）を拠点に、2016年より深層学習・機械学習およびコンピュータビジョンを中心とした基盤・応用研究に取り組んでいます。
         </div>
         <div class="home__about__description">
           We are a research group dedicated to leveraging the latest AI technologies as a practical
