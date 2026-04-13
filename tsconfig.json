@@ -1,5 +1,5 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "compilerOptions": {
     "baseUrl": ".",
@@ -8,9 +8,7 @@
       "@/*": ["./src/*"]
     },
     "moduleResolution": "bundler",
-    "verbatimModuleSyntax": true,
-    "importsNotUsedAsValues": "remove",
-    "preserveValueImports": false
+    "verbatimModuleSyntax": true
   },
 
   "references": [
