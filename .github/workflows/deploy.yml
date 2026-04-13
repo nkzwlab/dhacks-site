@@ -14,29 +14,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '25.x'
+
       - name: Install dependencies
         run: npm ci
+
       - name: Build
         run: npm run build
+
       - name: Install WireGuard
         run: |
           sudo add-apt-repository universe
           sudo apt update
           sudo apt install -y wireguard resolvconf
+
       - name: Setup WireGuard
         run: |
           echo "${{ secrets.VPN_CONF }}" | base64 -d > /tmp/wg0.conf
           sudo mv /tmp/wg0.conf /etc/wireguard/wg0.conf
           sudo chmod 600 /etc/wireguard/wg0.conf
           sudo systemctl enable --now wg-quick@wg0
+
       - name: Deploy file
         run: |
           echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > /tmp/id_rsa
           chmod 600 /tmp/id_rsa
           scp -i /tmp/id_rsa -o StrictHostKeyChecking=no -r ./dist/* jnroot@d-hacks.jn.sfc.keio.ac.jp:/var/www/html
+
       - name: Disconnect WireGuard
         run: sudo systemctl stop wg-quick@wg0
