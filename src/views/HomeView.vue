@@ -157,12 +157,12 @@ onMounted(() => {
       <h3>About us</h3>
       <div class="home__about__description-container">
         <div class="home__about__description">
-          私たちは、AI技術を実世界の課題解決に向けた実用的なアプローチとして活用し、より豊かな社会の実現を目指す研究グループです。慶應義塾大学SFC（湘南藤沢キャンパス）のデルタ棟S213を拠点に、2016年より深層学習・機械学習およびコンピュータビジョンを中心とした基盤・応用研究に取り組んでいます。
+          私たちは、AI技術を実世界の課題解決に向けた実用的なアプローチとして活用し、より豊かな社会の実現を目指す研究グループです。慶應義塾大学 湘南藤沢キャンパス（SFC）のデルタ棟S213を拠点に、2016年より深層学習・機械学習およびコンピュータビジョンを中心とした基盤・応用研究に取り組んでいます。
         </div>
         <div class="home__about__description">
           We are a research group dedicated to leveraging the latest AI technologies as a practical
           approach to solving real-world problems and contributing to a more enriched society. Based
-          at Keio University SFC (Shonan Fujisawa Campus), we focus on research centered on deep
+          at Keio University Shonan Fujisawa Campus (SFC), we focus on research centered on deep
           learning, machine learning, and computer vision, aiming to model complex patterns and
           phenomena in real-world data. We are actively looking for student researchers who are
           interested in AI and motivated to work on applying these technologies to real-world
